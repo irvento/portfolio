@@ -1,218 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Irven's Portfolio</title>
     
-    <title>Irven's_ElectivePortfolio</title>
-
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/irven.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <style>
-    </style>
 </head>
 
 <body>
-    <div class="cursor-container"></div>
-    <nav class="navbar">
-        <h3 class="w3-left">-irven-</h3>
-        <div>
-            <button onclick="scrollToSection('home')" class="navbutton">HOME</button>
-            <button onclick="scrollToSection('aboutme')" class="navbutton">ABOUT ME</button>
-            <button onclick="scrollToSection('cv')" class="navbutton">RESUME/CV</button>
-            <button onclick="scrollToSection('projects')" class="navbutton">MY PROJECTS</button>
-            <button onclick="scrollToSection('contact')" class="navbutton">CONTACT</button>
-            
-
-            <a href="./index.html" class="navbutton">Back to HomePage</a>
-        </div>
-    </nav>
-
-    <div class="content">
-        <div id="home" class="content-section">
-            <article>
-                <h1 class="home_h1">HELLO</h1>
-                <h2 class="home_h2">I'm</h2>
-                <h3 class="home_h3"><span class="namechange">IRVEN</span><span class="namechange"> ABARQUEZ</span></h3>
-            </article>
-        </div>
-
-        <div id="aboutme" class="content-section">
-            <article class="aboutme-container mt-8">
-               
-                <div class="aboutme-content">
-                    
-                    <div class="aboutmeleft">
-                        <img src="./imgs/profilepicture.jpg" alt="irven" class="w3-left w3-square aboutme_picture">
-                    </div>
-                    <div class="aboutmeright">
-                        <p class="aboutme_info">Hello there! I'm a 19-year-old BSIT student hailing from Northern Bukidnon State College. My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan, Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find joy in the art of programming and web development, continuously honing my skills in these domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve into a proficient developer. Behind every thing of that my hobbies are, venturing out of in the beauty of natures and killing time with enjoyment in gaming.</p>
-                        
-                        <div class="hyperlinks">
-                    <button onclick="scrollToSection('cv')" class="aboutme_button">Resume/CV</button>
-                    <div class="hrefmargin">
-                        <span class="hyperlink_margins"><a href="#" target="_blank" onclick="openfbLink()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAACYCAMAAAAvHNATAAAAXVBMVEUAAAD///8tLS0eHh7t7e1hYWH39/eFhYXR0dFOTk43Nzff398TExN6enooKChqamqWlpbm5ubGxsarq6sMDAzZ2dmPj49TU1PAwMCioqJbW1tERES3t7cZGRlvb29eDNfjAAAFB0lEQVR4nM2c6RaiMAyFg+wiiuDujO//mAMqWKAtbdIyuX896CeUNFsDAU1RkdVNVcb5NjwBnMJtHpdVU2dFRPxiIFx7bNJXHoJUYX5Im+P6YNG5ieVEYz2aM/LWocDqy9WE6qPrpV4FLCnKnTnVR7uySDyDJfeHLdVHj7slmhVYkeKoPkoLT2BZScHqVGYewM5Gb+GS4rNjsCPpIYpKDY2bEVhSWb+Iau0qo9fABOz2dIfV6XlzAhaR1/xc5fJ2sAhW791zAewXd4MlMGeLfqqUBFZY7Im2uurtrRbMz2PspX+cOrDKJ1anCgd28c0FcEGAJU62oCXFSmOrAosOa3ABHFQWTQEWbdfhAtgqyORgEdIdxOghJ5OCrXe/OsnvmQwsWWl99TrI3gAZ2Crvo6jYDGwF+zWVxJ7Nwbzbe5nme8AMrP4fXACzfXMKVnjdt9XaT32NKZgjPyfc7MO/Vldc9WBkv3CXlzchDkqSLk1ldGWqAyMvsEsmsUmJ2bXjZTYCi2gLLFS4y5HZ5ZvRDjACo8VDT1WUbQgGpQrsRuJKla6VKRiI8aYAlpDiWk3UYwz2FP6bAEYy+bpozBhM3AB+YEdKfuKp4bIA2/0szQ+MZMK0iS9zMOHGD2BnCpcm2rEDg+HNHsAoTthJnyOxARtcsx4sI3CNDRANbFgUPRjJti7kL63A+j/5BSsoXPlCtssKDIoRGC1PrueyBEtFMMP9X6FmzlL8KfPtppfd1yUC2J3CdZobsbsly0j3H1hCCrzDWYKcFmc9kgGMtPRhP+U6kr7uu/zfYDQ/bDMFowaA5QBGKy/MwKgBza4HI3r6MzC78Eii+gtGzAnMwBRlcnNdPmAR8da7B7tGbzCSw+MFrNt8WzCzeHRVsOYNRk1regCL32DUb/EA1lGR7bQXsGMLRl1iXsCaFoyc4PEBlrZg5BT1bBN3UEB/BRDliOvyWNBhCnaIR7qeED8QQYG48bs6SARNwZKRULmasABM3Laz6DhBJpEywLgWdmAov70GjLWwA0O5oQ1g3E07MNSWVwHm/9iBofzGEjDJFDswDFeLhTFjVmC4YDoHTM3UCgznh24Bs7FZgf1BgYWA2C/swHBRJgbLEuyF+gmcrMCw3ovvR5nggsOT98V/xNVbQpy5qCNRU5bRh8hWry3KwMIzFzRrTriKnyILVDlqSxrLh2vdYtF7Nn0EIy0Wvc3CC1iFchRXAGtQrvUKYDUqGFkBLEOFb/7B2vANFfB6B2sDXvru7wPsxTmpwjYNxTZxxzbVSe6V9JYcZptOZ1uAYFuyYVvkcl4WJIP1ZUHXhVQq2FBIdV16poL9Ss+0Yr1zsF+xntbe4BpMaG+gNYS4BhMaQmgtNK7BxBYaklPmGGzUdERa/o7Bxm1aFIvhFmzS2EZpBXQLNm0FJHhlTsFmzZME58cp2LzdFP9iugSTNOjiW5odgklbmtFtXw7BpE3g6LZ5d2CKtnnsQQN3YIqDBlgr6wxMeTQjiFBdoq7ANIdZcN6/KzDN8R+cMXMEpj0wherIPP16lzEdzF8tHDHjeyiP7TFGvgc/+R6V5Xu4mO9xbLYH2Pke+ec7JIHvWAm+gzgCtqNLAr7DXviOx+E7UChgO4KpVU05LaYUfWgV3zFfAdvBaAHfUXIB2+F7nZiOK+zEdMBjJ6YjMTsxHSL6RuM5dvUjloNqPzId7RuvO9r3K47DkAd5Gx/9D8ARPfx0pLn8AAAAAElFTkSuQmCC" alt="facebook" class="w3-circle home_hreficons"></a></span>  
-                        <span class="hyperlink_margins"><a href="#" target="_blank" onclick="openInstaLink()"><img src="data:image/jpeg;base64,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" alt="instagram" class="w3-circle home_hreficons"></a></span>
-                        <span class="hyperlink_margins"><a href="#" target="_blank" onclick="openTwitterLink()"><img src="data:image/jpeg;base64,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" alt="twitter" class="w3-circle home_hreficons"></a></span>
-                        <span class="hyperlink_margins"><a href="#" target="_blank" onclick="opengitLink()"><img src="data:image/png;base64,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" alt="github" class="w3-circle home_hreficons"></a></span>
-                        <span class="hyperlink_margins"><a href="#" target="_blank" onclick="openytLink()"><img src="data:image/jpeg;base64,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" alt="telegram" class="w3-circle home_hreficons"></a></span>
-                    </div>    
-            </div>
-                    </div>
-                    
-
-                </div>
-                
-
-                
-            </article>
-        </div>
-
-        <div id="cv" class="content-section">
-            <div class="cv_contents overlay">
-                <div class="cv_contents_margin">
-                    <div class="cv_info_container">
-                    <h1 class="cv_h1">Tools I use</h1>
-                      
-                        <div class="skills-grid">
-                            <div class="skill-item" data-skill="Multimedia Applications">
-                                
-                                <p class="cv_h2_info"><i class="fas fa-video skill-icon"></i>Multimedia Applications (Power Director, Capcut, PixelStudios, Canva)</p>
-                            </div>
-                            <div class="skill-item" data-skill="Computer Literate">
-                                
-                                <p class="cv_h2_info"><i class="fas fa-desktop skill-icon"></i>Computer Literate (Internet Applications, Powerpoint, Excel, Microsoft Word)</p>
-                            </div>
-                            <div class="skill-item" data-skill="Java">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-java skill-icon"></i>Java</p>
-                            </div>
-                            <div class="skill-item" data-skill="Javascript">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-js-square skill-icon"></i>Javascript</p>
-                            </div>
-                            <div class="skill-item" data-skill="HTML5">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-html5 skill-icon"></i>HTML5</p>
-                            </div>
-                            <div class="skill-item" data-skill="CSS3">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-css3-alt skill-icon"></i>CSS3</p>
-                            </div>
-                            <div class="skill-item" data-skill="Laravel">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-laravel skill-icon"></i>Laravel</p>
-                            </div>
-                            <div class="skill-item" data-skill="Ionic">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-ionic skill-icon"></i>Ionic</p>
-                            </div>
-                            <div class="skill-item" data-skill="React">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-react skill-icon"></i>React</p>
-                            </div>
-                            <div class="skill-item" data-skill="Git">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-git-alt skill-icon"></i>Git</p>
-                            </div>
-                            <div class="skill-item" data-skill="MySQL">
-                                
-                                <p class="cv_h2_info"><i class="fas fa-database skill-icon"></i>MySQL</p>
-                            </div>
-                            <div class="skill-item" data-skill="PHP">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-php skill-icon"></i>PHP</p>
-                            </div>
-                            <div class="skill-item" data-skill="Tailwind">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-css3 skill-icon"></i>Tailwind CSS</p>
-                            </div>
-                            <div class="skill-item" data-skill="Node.js">
-                                
-                                <p class="cv_h2_info"><i class="fab fa-node-js skill-icon"></i>Node.js</p>
-                            </div>
-                        </div><br>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div id="projects" class="content-section">
-            
-            <div class="projects">
-                <h1 class="project_h1 "><img src="./imgs/AssassinSKGif.gif" alt="gif" class="project_gifs">PROJECTS<img src="./imgs/The_Beheaded_0.gif" alt="beheadedgif" class="project_gifs"></h1>
-                <div class="project1 ">
-                    <div class="projectsleft bigProject_hover">
-                            <img src="./imgs/projects1.jpg" alt="project1" class="project_project1_img">
-                            <p class="project_info">Java • Pixel Art Studios</p>
-                        </div>
-                        <div class="projectsright">
-                            <h1 class="project_info_h1">Underworld Legends</h1>
-                            <p class="project_info2">Underworld Legends was created back then from my freshmen year 2021 - 2022. This project is inspired from Kaarin Gaming's game which is called the Platformer Tutorial from youtube. I modified and edited Kaarin's single multiplayer game into a Player vs. Player, implementing it into a fun and interactive one.</p>
-                            <p class="project_info project_GITbutton project_GITbutton_margin"><a href="#" target="_blank" onclick="openProject1Link()" class="a_projects">GitHub Repository</a></p>
-                    </div>
-                </div>
-
-                <div class="project2">
-                    <div class="projectsright">
-                            <h1 class="project_info_h1">SPA Portfolio</h1>
-                            <p class="project_info2">This portfolio is created in the month of November 2023. It is implemented using a single page application portfolio using AJAX that manipulates the contents of the webpage by clicking the buttons in the navbar. This project is from my Major Subject, Event Driven </p>
-                            <p class="project_info project_GITbutton project_GITbutton_margin"><a href="#" target="_blank" onclick="openProject2Link()" class="a_projects">GitHub Repository</a></p>
-                        </div>
-                        <div class="projectsleft bigProject_hover">
-                            <img src="./imgs/project2.png" alt="project2" class="project_project2_img">
-                            <p class="project_info">HTML • CSS • Javascript </p>
-                    </div>
-                </div>
-
-                <div class="project3">
-                    <div class="projectsleft bigProject_hover">
-                            <img src="./imgs/project3.png" alt="project3" class="project_project3_img">
-                            <p class="project_info">Java</p>
-                        </div>
-                        <div class="projectsright">
-                            <h1 class="project_info_h1">Java Simple Calculator</h1>
-                            <p class="project_info2">This program was created form my freshmen years 2021 - 2022, it was created using simple arithmetics, logics, conditions and Java's Swing GUIs. It works like any simple calculator. </p>
-                            <p class="project_info project_GITbutton project_GITbutton_margin"><a href="#" target="_blank" onclick="openProject3Link()" class="a_projects">GitHub Repository</a></p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <footer>
-        <div id="contact" class="content-section">
-            <div class="contact">
-
-                <h1 class="contact_title">Contact me</h1>
-                
-                <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
-                <h3>contact me at</h3>
-                    <p class="contact_p"><img src="https://us.123rf.com/450wm/sanek13744/sanek137441805/sanek13744180500500/101997013-mail-envelope-vector-icon-email-flat-vector-illustration-e-mail-business-concept-pictogram-with-long.jpg?ver=6" alt="email" class="contact_icons w3-circle w3-left">  irvenabarquez@gmail.com</p>
-                    <p class="contact_p"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7lYg6NYv7yapiQEM2XGVY2uZZFti0o2Dww&usqp=CAU" alt="phonenumber" class="contact_icons w3-circle">0920 426 8501</p>
-                    <p class="contact_p"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvwXGtZsa7pobqvLqcYztbXWxD4NEm5d6UQ&usqp=CAU" alt="messenger" class="contact_icons w3-circle">Irven Abarquez</p>
-                    <p class="contact_p"><img src="data:image/jpeg;base64,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" alt="adress" class="contact_icons w3-circle">Kihari, Tankulan, Manolo Fortich, Bukidnon</p>
-                   
-            </div>
-        </div>
-        </footer> 
+        <!-- Custom Cursor -->
+    <div class="cursor-container">
+        <div class="cursor"></div>
+        <div class="trail"></div>
     </div>
 
-   
-</body>
-<script src="./js/href.js"></script>
-<script src="./js/scroll.js"></script>
+ <!-- Navigation -->
+<nav class="navbar">    
+    <h3>-irven-</h3>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links" id="navLinks">
+        <button onclick="scrollToSection('home')" class="navbutton">HOME</button>
+        <button onclick="scrollToSection('aboutme')" class="navbutton">ABOUT ME</button>
+        <button onclick="scrollToSection('cv')" class="navbutton">TOOLS</button>
+        <button onclick="scrollToSection('projects')" class="navbutton">PROJECTS</button>
+        <button onclick="scrollToSection('contact')" class="navbutton">CONTACT</button>
+    </div>
+</nav>
 
+    <!-- Home Section -->
+    <div id="home" class="content-section">
+        <div class="home-content">
+
+            <h3 class="home_h3">
+                <span class="namechange">IRVEN</span>
+                <span class="namechange">ABARQUEZ</span>
+            </h3>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="aboutme" class="content-section">
+        <div class="aboutme-container">
+            <div class="aboutme-content">
+                <div class="aboutmeleft">
+                    <img src="./imgs/profilepicture.jpg" alt="Irven Abarquez" class="aboutme_picture">
+                </div>
+                <div class="aboutmeright">
+                    <p class="aboutme_info">
+    Hello there! I'm a <span id="myAge"></span>-year-old BSIT student hailing from Northern Bukidnon State College. 
+    My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan, 
+    Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find 
+    joy in the art of programming and web development, continuously honing my skills in these 
+    domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve 
+    into a proficient developer. My hobbies include venturing out into the beauty of nature and 
+    enjoying gaming in my free time.
+</p>
+
+                    <div class="hyperlinks">
+                        <button onclick="scrollToSection('cv')" class="aboutme_button">View My Tools</button>
+                        <div class="social-links">
+                            <a href="#" onclick="openfbLink()" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" onclick="openInstaLink()" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" onclick="openTwitterLink()" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" onclick="opengitLink()" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" onclick="openytLink()" class="social-icon">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- TOOLS -->
+<div id="cv" class="content-section tools-section">
+    <div class="tools-wrapper">
+        <!-- Animated Background Shapes -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        
+        <div class="tools-container">
+            <div class="tools-header">
+                <h1 class="tools-title">My Tech Toolkit</h1>
+                <p class="tools-subtitle">Technologies and tools I work with daily</p>
+            </div>
+
+            <div class="tools-categories-grid">
+
+                <!-- Frontend Development -->
+                <div class="category-card category-frontend">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="category-skills">
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-html5"></i></span>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-js-square"></i></span>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-react"></i></span>
+                                <span class="skill-name">React</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-css3"></i></span>
+                                <span class="skill-name">Tailwind CSS</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="category-card category-backend">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend & Database</h3>
+                    </div>
+                    <div class="category-skills">
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-node-js"></i></span>
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-php"></i></span>
+                                <span class="skill-name">PHP</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-laravel"></i></span>
+                                <span class="skill-name">Laravel</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fas fa-database"></i></span>
+                                <span class="skill-name">MySQL</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fas fa-database"></i></span>
+                                <span class="skill-name">Supabase</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile & Tools -->
+                <div class="category-card category-mobile">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile & Tools</h3>
+                    </div>
+                    <div class="category-skills">
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-ionic"></i></span>
+                                <span class="skill-name">Ionic</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-java"></i></span>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                        <div class="skill-tag">
+                            <div class="skill-icon-name">
+                                <span class="skill-icon"><i class="fab fa-git-alt"></i></span>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <span class="skill-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+               
+                
+            </div>
+
+
+
+            <!-- Footer Note -->
+            <div class="tools-footer">
+                <p class="footer-note">
+                    <i class="fas fa-lightbulb"></i>
+                    Continuously learning and expanding my skill set. Open to exploring new technologies!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Projects Section -->
+    <div id="projects" class="content-section">
+        <div class="projects">
+            <h1 class="project_h1">
+                <img src="./imgs/AssassinSKGif.gif" alt="Assassin gif" class="project_gifs">
+                PROJECTS
+                <img src="./imgs/The_Beheaded_0.gif" alt="Beheaded gif" class="project_gifs">
+            </h1>
+
+            <div class="project1">
+                <div class="projectsleft">
+                    <img src="./imgs/projects1.jpg" alt="Underworld Legends Project" class="project_project1_img">
+                    <p class="project_info">Java • Pixel Art Studios</p>
+                </div>
+                <div class="projectsright">
+                    <h1 class="project_info_h1">Underworld Legends</h1>
+                    <p class="project_info2">
+                        Underworld Legends was created during my freshman year 2021-2022. 
+                        This project is inspired by Kaarin Gaming's Platformer Tutorial from YouTube. 
+                        I modified and enhanced Kaarin's single-player game into a Player vs. Player 
+                        experience, implementing fun and interactive gameplay mechanics.
+                    </p>
+                    <a href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
+                </div>
+            </div>
+
+            <div class="project2">
+                <div class="projectsright">
+                    <h1 class="project_info_h1">SPA Portfolio</h1>
+                    <p class="project_info2">
+                        This portfolio was created in November 2023. It's implemented as a single-page 
+                        application portfolio using AJAX that manipulates webpage content by clicking 
+                        navigation buttons. This project was developed for my Major Subject, Event Driven Programming.
+                    </p>
+                    <a href="#" onclick="openProject2Link()" class="project_GITbutton">GitHub Repository</a>
+                </div>
+                <div class="projectsleft">
+                    <img src="./imgs/project2.png" alt="SPA Portfolio Project" class="project_project2_img">
+                    <p class="project_info">HTML • CSS • JavaScript</p>
+                </div>
+            </div>
+
+            <div class="project3">
+                <div class="projectsleft">
+                    <img src="./imgs/project3.png" alt="Java Calculator Project" class="project_project3_img">
+                    <p class="project_info">Java</p>
+                </div>
+                <div class="projectsright">
+                    <h1 class="project_info_h1">Java Simple Calculator</h1>
+                    <p class="project_info2">
+                        This program was created during my freshman years 2021-2022. 
+                        It was developed using simple arithmetic operations, logic structures, 
+                        conditions, and Java's Swing GUI framework. It functions as a standard 
+                        calculator with all basic operations.
+                    </p>
+                    <a href="#" onclick="openProject3Link()" class="project_GITbutton">GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="content-section">
+        <div class="contact">
+            <h1 class="contact_title">Contact Me</h1>
+            <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
+            <h3 class="text-center">Get in touch with me</h3>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <p class="contact_p">
+                        <img src="https://us.123rf.com/450wm/sanek13744/sanek137441805/sanek13744180500500/101997013-mail-envelope-vector-icon-email-flat-vector-illustration-e-mail-business-concept-pictogram-with-long.jpg?ver=6" 
+                             alt="Email icon" class="contact_icons">
+                        irvenabarquez@gmail.com
+                    </p>
+                    <p class="contact_p">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7lYg6NYv7yapiQEM2XGVY2uZZFti0o2Dww&usqp=CAU" 
+                             alt="Phone icon" class="contact_icons">
+                        0920 426 8501
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <p class="contact_p">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvwXGtZsa7pobqvLqcYztbXWxD4NEm5d6UQ&usqp=CAU" 
+                             alt="Messenger icon" class="contact_icons">
+                        Irven Abarquez
+                    </p>
+                    <p class="contact_p">
+                        <img src="data:image/jpeg;base64,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" 
+                             alt="Address icon" class="contact_icons">
+                        Kihari, Tankulan, Manolo Fortich, Bukidnon
+                    </p>
+                </div>
+            </div>
+            
+            <div class="social-links mt-3">
+                <a href="#" onclick="openfbLink()" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" onclick="openInstaLink()" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" onclick="openTwitterLink()" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="opengitLink()" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" onclick="openytLink()" class="social-icon">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+           // Responsive Menu Toggle
+function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    const menuIcon = document.querySelector('.menu-toggle i');
+    
+    navLinks.classList.toggle('active');
+    
+    // Change icon based on menu state
+    if (navLinks.classList.contains('active')) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+    } else {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+    }
+}
+
+// Close menu when clicking on a link (for mobile)
+document.querySelectorAll('.navbutton').forEach(button => {
+    button.addEventListener('click', (e) => {
+        // Only close menu if it's a section scroll button
+        if (button.getAttribute('onclick') && button.getAttribute('onclick').includes('scrollToSection')) {
+            if (window.innerWidth <= 768) {
+                toggleMenu();
+            }
+        }
+    });
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    const navLinks = document.getElementById('navLinks');
+    const menuIcon = document.querySelector('.menu-toggle i');
+    
+    if (window.innerWidth > 768) {
+        navLinks.classList.remove('active');
+        navLinks.style.display = 'flex';
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+    } else {
+        if (!navLinks.classList.contains('active')) {
+            navLinks.style.display = 'none';
+        }
+    }
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    const navLinks = document.getElementById('navLinks');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    if (window.innerWidth <= 768 && 
+        navLinks.classList.contains('active') &&
+        !navLinks.contains(e.target) && 
+        !menuToggle.contains(e.target)) {
+        toggleMenu();
+    }
+});
+            // Link functions (placeholder)
+            function openfbLink() { window.open('https://facebook.com', '_blank'); }
+            function openInstaLink() { window.open('https://instagram.com', '_blank'); }
+            function openTwitterLink() { window.open('https://twitter.com', '_blank'); }
+            function opengitLink() { window.open('https://github.com', '_blank'); }
+            function openytLink() { window.open('https://telegram.org', '_blank'); }
+            function openProject1Link() { window.open('#', '_blank'); }
+            function openProject2Link() { window.open('#', '_blank'); }
+            function openProject3Link() { window.open('#', '_blank'); }
+
+            // Custom cursor functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const cursor = document.querySelector('.cursor');
+        const trail = document.querySelector('.trail');
+        let mouseX = 0, mouseY = 0;
+        let trailX = 0, trailY = 0;
+        
+        // Update cursor position
+        function updateCursor(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        }
+        
+        // Animate cursor with smooth trail
+        function animateCursor() {
+            // Main cursor (instant)
+            cursor.style.left = mouseX + 'px';
+            cursor.style.top = mouseY + 'px';
+            
+            // Trail (delayed for smooth effect)
+            trailX += (mouseX - trailX) * 0.1;
+            trailY += (mouseY - trailY) * 0.1;
+            trail.style.left = trailX + 'px';
+            trail.style.top = trailY + 'px';
+            
+            requestAnimationFrame(animateCursor);
+        }
+        
+        // Add click animation
+        document.addEventListener('click', function() {
+            cursor.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+                cursor.style.transform = 'scale(1)';
+            }, 100);
+        });
+        
+        // Change cursor on interactive elements
+        const interactiveElements = document.querySelectorAll('button, a, .navbutton, .project_GITbutton, .social-icon, .aboutme_button');
+        
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursor.style.transform = 'scale(1.5)';
+            cursor.style.backgroundColor = '#00ffff';
+        });
+        
+        el.addEventListener('mouseleave', () => {
+            cursor.style.transform = 'scale(1)';
+            cursor.style.backgroundColor = 'gold';
+        });
+    });
+    
+    // Initialize cursor
+    document.addEventListener('mousemove', updateCursor);
+    requestAnimationFrame(animateCursor);
+});
+
+// Add cursor visibility on page load
+window.onload = function() {
+    document.querySelector('.cursor').style.opacity = '1';
+    document.querySelector('.trail').style.opacity = '0.6';
+};
+
+function getAge(birthdate) {
+  const today = new Date();
+  const birth = new Date(birthdate);
+
+  let age = today.getFullYear() - birth.getFullYear();
+  const hasBirthday =
+    today.getMonth() > birth.getMonth() ||
+    (today.getMonth() === birth.getMonth() && today.getDate() >= birth.getDate());
+
+  if (!hasBirthday) age--;
+
+  return age;
+}
+
+document.getElementById("myAge").textContent = getAge("2004-06-18");
+    </script>
+</body>
 </html>
