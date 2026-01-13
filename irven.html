@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <h1 class="loader-text">LOADING...</h1>
+    </div>
     <!-- Custom Cursor -->
     <div class="cursor-container">
         <div class="cursor"></div>
@@ -666,6 +669,15 @@
         window.onload = function () {
             document.querySelector('.cursor').style.opacity = '1';
             document.querySelector('.trail').style.opacity = '0.6';
+
+            // Preloader Fade Out
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500); // Wait for transition to finish
+            }, 1000); // Initial delay
         };
 
         function getAge(birthdate) {
