@@ -275,50 +275,99 @@ nav {
 
 /*home*/
 #home {
-    background-image: url(https://i.pinimg.com/originals/aa/61/56/aa6156ccd4bce8152640bcaa8a502090.png);
+    background-image: url(../imgs/heroBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
-.home-content {
-    text-align: center;
-    padding-top: 80px;
+/* Background flourish */
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
 }
 
-.home_h1,
-.home_h2,
-.home_h3 {
-    font-family: Impact, Charcoal, sans-serif;
-    letter-spacing: 2px;
-    word-spacing: 0.6px;
-    color: #fefefe;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: italic;
-    font-variant: small-caps;
-    text-transform: lowercase;
-    text-shadow: 4px 4px 2px rgba(131, 126, 126, 0.6);
-    margin: 0;
-    line-height: 1;
+.home-container {
+    max-width: 1100px;
+    width: 100%;
+    z-index: 1;
 }
 
-.home_h1 {
-    color: gold;
-    font-size: 80px;
+.home-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.home_h2 {
-    font-size: 80px;
+.home-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-.home_h3 {
-    font-size: 120px;
+.home-profile-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.home-profile-img:hover {
+    transform: scale(1.05) rotate(2deg);
+    border-color: gold;
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.4);
+}
+
+.home-right {
+    flex: 1.5;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+}
+
+.home-intro {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.5rem;
+    color: gold;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.home_h1_card {
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+    color: white;
+    margin: 10px 0;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .namechange {
@@ -332,23 +381,95 @@ nav {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .home_h1 {
-        font-size: 50px;
-    }
+.home-role {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
 
-    .home_h2 {
-        font-size: 50px;
-    }
+.home-buttons {
+    display: flex;
+    gap: 20px;
+}
 
-    .home_h3 {
-        font-size: 70px;
+.home-btn {
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.primary-btn {
+    background: gold;
+    color: black;
+    border: 2px solid gold;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.primary-btn:hover {
+    background: transparent;
+    color: gold;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: black;
+    border-color: white;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 968px) {
+    .home-card {
         flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-right {
+        align-items: center;
+    }
+
+    .home_h1_card {
+        font-size: 3.5rem;
+        align-items: center;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .home-btn {
+        width: 100%;
     }
 }
 
 /* home */
 
+/*aboutme*/
 /*aboutme*/
 #aboutme {
     background-image: linear-gradient(rgba(0, 0, 0, 0.966), rgba(74, 74, 74, 0.56));
@@ -357,80 +478,121 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
     min-height: 100vh;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background elements for depth */
+#aboutme::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .aboutme-container {
     max-width: 1200px;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .aboutme-content {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
 }
 
 .aboutmeleft {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutmeright {
-    flex: 1;
+    flex: 1.2;
 }
 
 .aboutme_picture {
-    border: 5px solid gold;
     width: 100%;
     max-width: 400px;
-    border-radius: 5%;
-    box-shadow: 10px 10px 39px 10px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     display: block;
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(255, 215, 0, 0.3);
 }
 
-.aboutme_info {
-    border: 2px solid gold;
-    border-radius: 2%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.823), rgba(255, 255, 255, 0.062));
-    box-shadow: 10px 10px 39px 10px rgba(0, 0, 0, 0.75);
-    padding: 25px;
-    font-family: "Lucida Console", Monaco, monospace;
-    text-align: justify;
-    letter-spacing: 1.8px;
-    line-height: 1.6;
-    color: #000000;
-    font-weight: 200;
-    margin: 0;
+.aboutme_picture:hover {
+    transform: scale(1.02);
+    border-color: gold;
+}
+
+.aboutme-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.aboutme-header {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    color: gold;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutme-text {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-align: left;
 }
 
 .aboutme_button {
-    font-family: "Lucida Console", Monaco, monospace;
-    letter-spacing: 1.8px;
-    font-weight: 700;
-    text-decoration: none solid rgb(68, 68, 68);
-    font-style: italic;
-    font-variant: small-caps;
-    text-transform: uppercase;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid gold;
-    border-radius: 10px;
-    padding: 12px 25px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(135deg, gold, #ffdb4d);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.75);
-    transition: all 0.5s;
-    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .aboutme_button:hover {
-    border: 2px solid white;
-    background-color: #000;
-    color: gold;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+    background: white;
+    color: black;
 }
+
+
 
 .hyperlinks {
     margin-top: 30px;
@@ -984,6 +1146,43 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px 0;
     box-sizing: border-box;
+}
+
+@media (max-width: 968px) {
+    .aboutme-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutmeleft {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .aboutmeright {
+        width: 100%;
+    }
+
+    .aboutme-card {
+        padding: 30px 20px;
+    }
+
+    .aboutme_picture {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .aboutme-header {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .aboutme-text {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }

@@ -37,7 +37,28 @@
     </nav>
 
     <!-- Home Section -->
-
+    <div id="home" class="content-section">
+        <div class="home-container">
+            <div class="home-card">
+                <div class="home-left">
+                    <img src="./imgs/profilepicture.jpg" alt="Irven Abarquez" class="home-profile-img">
+                </div>
+                <div class="home-right">
+                    <p class="home-intro">Hi, I am</p>
+                    <h1 class="home_h1_card">
+                        <span class="namechange">IRVEN</span>
+                        <span class="namechange">ABARQUEZ</span>
+                    </h1>
+                    <p class="home-role">Web Developer & Designer</p>
+                    <div>
+                        <button onclick="scrollToSection('projects')" class="home-btn primary-btn">View
+                            Projects</button>
+                        <button onclick="scrollToSection('contact')" class="home-btn secondary-btn">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- About Me Section -->
     <div id="aboutme" class="content-section">
@@ -47,35 +68,39 @@
                     <img src="./imgs/profilepicture.jpg" alt="Irven Abarquez" class="aboutme_picture">
                 </div>
                 <div class="aboutmeright">
-                    <p class="aboutme_info">
-                        Hello there! I'm a <span id="myAge"></span>-year-old BSIT student hailing from Northern Bukidnon
-                        State College.
-                        My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan,
-                        Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find
-                        joy in the art of programming and web development, continuously honing my skills in these
-                        domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve
-                        into a proficient developer. My hobbies include venturing out into the beauty of nature and
-                        enjoying gaming in my free time.
-                    </p>
+                    <div class="aboutme-card">
+                        <h2 class="aboutme-header">Who am I?</h2>
+                        <p class="aboutme-text">
+                            Hello there! I'm a <span id="myAge"></span>-year-old BSIT student hailing from Northern
+                            Bukidnon
+                            State College.
+                            My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan,
+                            Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find
+                            joy in the art of programming and web development, continuously honing my skills in these
+                            domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve
+                            into a proficient developer. My hobbies include venturing out into the beauty of nature and
+                            enjoying gaming in my free time.
+                        </p>
 
-                    <div class="hyperlinks">
-                        <button onclick="scrollToSection('cv')" class="aboutme_button">View My Tools</button>
-                        <div class="social-links">
-                            <a href="#" onclick="openfbLink()" class="social-icon">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" onclick="openInstaLink()" class="social-icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" onclick="openTwitterLink()" class="social-icon">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" onclick="opengitLink()" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" onclick="openytLink()" class="social-icon">
-                                <i class="fab fa-telegram"></i>
-                            </a>
+                        <div class="hyperlinks">
+                            <button onclick="scrollToSection('cv')" class="aboutme_button">View My Tools</button>
+                            <div class="social-links">
+                                <a href="#" onclick="openfbLink()" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" onclick="openInstaLink()" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" onclick="openTwitterLink()" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" onclick="opengitLink()" class="social-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" onclick="openytLink()" class="social-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
