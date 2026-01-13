@@ -39,7 +39,7 @@
     <!-- Home Section -->
     <div id="home" class="content-section">
         <div class="home-container">
-            <div class="home-card">
+            <div class="home-card reveal">
                 <div class="home-left">
                     <img src="./imgs/profilepicture.jpg" alt="Irven Abarquez" class="home-profile-img">
                 </div>
@@ -64,43 +64,39 @@
     <div id="aboutme" class="content-section">
         <div class="aboutme-container">
             <div class="aboutme-content">
-                <div class="aboutmeleft">
-                    <img src="./imgs/profilepicture.jpg" alt="Irven Abarquez" class="aboutme_picture">
-                </div>
-                <div class="aboutmeright">
-                    <div class="aboutme-card">
-                        <h2 class="aboutme-header">Who am I?</h2>
-                        <p class="aboutme-text">
-                            Hello there! I'm a <span id="myAge"></span>-year-old BSIT student hailing from Northern
-                            Bukidnon
-                            State College.
-                            My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan,
-                            Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find
-                            joy in the art of programming and web development, continuously honing my skills in these
-                            domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve
-                            into a proficient developer. My hobbies include venturing out into the beauty of nature and
-                            enjoying gaming in my free time.
-                        </p>
 
-                        <div class="hyperlinks">
-                            <button onclick="scrollToSection('cv')" class="aboutme_button">View My Tools</button>
-                            <div class="social-links">
-                                <a href="#" onclick="openfbLink()" class="social-icon">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" onclick="openInstaLink()" class="social-icon">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" onclick="openTwitterLink()" class="social-icon">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" onclick="opengitLink()" class="social-icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" onclick="openytLink()" class="social-icon">
-                                    <i class="fab fa-telegram"></i>
-                                </a>
-                            </div>
+                <div class="aboutme-card reveal">
+                    <h2 class="aboutme-header">Who am I?</h2>
+                    <p class="aboutme-text">
+                        Hello there! I'm a <span id="myAge"></span>-year-old BSIT student hailing from Northern
+                        Bukidnon
+                        State College.
+                        My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan,
+                        Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find
+                        joy in the art of programming and web development, continuously honing my skills in these
+                        domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve
+                        into a proficient developer. My hobbies include venturing out into the beauty of nature and
+                        enjoying gaming in my free time.
+                    </p>
+
+                    <div class="hyperlinks">
+                        <button onclick="scrollToSection('cv')" class="aboutme_button">View My Tools</button>
+                        <div class="social-links">
+                            <a href="#" onclick="openfbLink()" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" onclick="openInstaLink()" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" onclick="openTwitterLink()" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" onclick="opengitLink()" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" onclick="openytLink()" class="social-icon">
+                                <i class="fab fa-telegram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -349,167 +345,187 @@
         </div>
     </div>
     <!-- Projects Section -->
-    <div id="projects" class="content-section">
-        <div class="projects">
-            <h1 class="project_h1">
-                <img src="./imgs/AssassinSKGif.gif" alt="Assassin gif" class="project_gifs">
-                PROJECTS
-                <img src="./imgs/The_Beheaded_0.gif" alt="Beheaded gif" class="project_gifs">
-            </h1>
-            <!-- Project1 -->
-            <div class="project1">
-                <div class="projectsleft">
-                    <img src="./imgs/projects1.jpg" alt="Underworld Legends Project" class="project_project1_img">
-                    <p class="project_info">Java • Pixel Art Studios</p>
+    <section>
+        <div id="projects" class="content-section">
+            <div class="projects reveal">
+                <h1 class="project_h1">
+                    <img src="./imgs/AssassinSKGif.gif" alt="Assassin gif" class="project_gifs">
+                    PROJECTS
+                    <img src="./imgs/The_Beheaded_0.gif" alt="Beheaded gif" class="project_gifs">
+                </h1>
+                <!-- Project1 -->
+                <div class="project1">
+                    <div class="projectsleft">
+                        <img src="./imgs/projects1.jpg" alt="Underworld Legends Project" class="project_project1_img">
+                        <p class="project_info">Java • Pixel Art Studios</p>
+                    </div>
+                    <div class="projectsright">
+                        <h1 class="project_info_h1">Underworld Legends</h1>
+                        <p class="project_info2">
+                            Underworld Legends was created during my freshman year 2021-2022.
+                            This project is inspired by Kaarin Gaming's Platformer Tutorial from YouTube.
+                            I modified and enhanced Kaarin's single-player game into a Player vs. Player
+                            experience, implementing fun and interactive gameplay mechanics.
+                        </p>
+                        <a href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
+                    </div>
                 </div>
-                <div class="projectsright">
-                    <h1 class="project_info_h1">Underworld Legends</h1>
-                    <p class="project_info2">
-                        Underworld Legends was created during my freshman year 2021-2022.
-                        This project is inspired by Kaarin Gaming's Platformer Tutorial from YouTube.
-                        I modified and enhanced Kaarin's single-player game into a Player vs. Player
-                        experience, implementing fun and interactive gameplay mechanics.
-                    </p>
-                    <a href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
+
+                <!-- Project2 -->
+                <div class="project2">
+                    <div class="projectsleft"> <img src="./imgs/projects2.png"
+                            alt="ARGOMsqrd Cemetery Management System Interface" class="project_project1_img">
+                        <p class="project_info">TypeScript • React • Supabase • PostgreSQL• Tailwind • Open Street Maps
+                            •
+                            GIS • ARjs</p>
+                    </div>
+                    <div class="projectsright">
+                        <h1 class="project_info_h1">ARGOMsqrd</h1>
+                        <p class="project_info2"> ARGOMsqrd is a comprehensive GIS and AR-enabled Digital Mapping and
+                            Obituary Management System I led as the lead developer during my 4th-year capstone project.
+                            The
+                            system was designed to modernize operations at the Manolo Fortich Memorial Park, tackling
+                            inefficiency, congestion, and manual record-keeping prevalent in public cemeteries. <br><br>
+                            Developed using an Agile-Scrum framework, the web application features interactive grave
+                            mapping
+                            via OpenStreetMap, AR-guided navigation for visitors, a digital obituary platform, and
+                            genealogy
+                            visualization. Its successful evaluation—scoring an excellent 77.33 on the System Usability
+                            Scale (SUS) and high marks for user acceptance—demonstrates its effectiveness in improving
+                            operational efficiency and visitor experience, aligning with Sustainable Development Goals
+                            for
+                            smart community infrastructure. </p> <a href="#" onclick="openProject2Link()"
+                            class="project_GITbutton">GitHub Repository</a>
+                    </div>
                 </div>
+
+                <!-- Project3 -->
+                <div class="project1">
+                    <div class="projectsleft"> <img src="./imgs/projects3.png" alt="HRStreamline Dashboard Interface"
+                            class="project_project1_img">
+                        <p class="project_info">Laravel • MySQL • Blade • PHP • Tailwind CSS</p>
+                    </div>
+                    <div class="projectsright">
+                        <h1 class="project_info_h1">HRStreamline</h1>
+                        <p class="project_info2"> HRStreamline is a full-stack Human Resources Information System (HRIS)
+                            designed to centralize and automate core HR functions. It serves as a secure, unified
+                            repository
+                            for all employee data—from personal details and employment history to compensation,
+                            performance
+                            reviews, and benefits. <br><br> By automating routine administrative tasks, the system
+                            significantly reduces manual errors, increases operational efficiency, and enables
+                            data-driven
+                            decision-making. HRStreamline empowers organizations to align human capital management with
+                            strategic mission and vision, providing HR professionals with the tools to focus on
+                            development,
+                            engagement, and delivering a superior employee experience. </p> <a href="#"
+                            onclick="openProject3Link()" class="project_GITbutton">GitHub Repository</a>
+                    </div>
+                </div>
+
+                <!-- Project4 -->
+                <div class="project2">
+                    <div class="projectsleft"> <img src="./imgs/projects4.png" alt="Cropwise Farm Management Dashboard"
+                            class="project_project1_img">
+                        <p class="project_info">Laravel • MySQL • Blade • PHP • Tailwind CSS • OpenWeather API</p>
+                    </div>
+                    <div class="projectsright">
+                        <h1 class="project_info_h1">Cropwise</h1>
+                        <p class="project_info2"> Cropwise is a comprehensive web-based Farm Management and ERP system
+                            designed to modernize and streamline agricultural operations. It addresses key industry
+                            challenges such as fragmented record-keeping, inefficient resource use, and lack of
+                            real-time
+                            monitoring by integrating core functions—including crop planning, harvest tracking,
+                            inventory
+                            control, budgeting, employee management, payroll, and reporting—into a single unified
+                            platform.
+                            It was ceated in my Enterprise Application Development subject.
+
+                        </p> <a href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
+                    </div>
+                </div>
+
+                <!-- Project5 -->
+                <div class="project1">
+                    <div class="projectsleft"> <img src="./imgs/projects5.png"
+                            alt="Null Crime Reporting Platform Interface" class="project_project1_img">
+                        <p class="project_info">React • Ionic • PostgreSQL • Supabase • OpenStreetMap API</p>
+                    </div>
+                    <div class="projectsright">
+                        <h1 class="project_info_h1">Null Crime</h1>
+                        <p class="project_info2"> This project was created during the Emerging Technologies subject.
+                            Null
+                            Crime is a community-focused crime reporting and prevention platform
+                            developed to support SDG 16: Peace, Justice, and Strong Institutions. The system enables
+                            real-time crime reporting with photo/video uploads, interactive geographical crime mapping,
+                            and
+                            priority-based reporting features. It also provides public crime analytics and an
+                            educational
+                            safety module to raise awareness and promote prevention. <br><br> Designed to increase
+                            transparency and collaboration between citizens and law enforcement, the platform aims to
+                            create
+                            safer, more informed communities through accessible technology and data-driven insights.
+                        </p> <a href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
+                    </div>
+                </div>
+
+
             </div>
-
-            <!-- Project2 -->
-            <div class="project2">
-                <div class="projectsleft"> <img src="./imgs/projects2.png"
-                        alt="ARGOMsqrd Cemetery Management System Interface" class="project_project1_img">
-                    <p class="project_info">TypeScript • React • Supabase • PostgreSQL• Tailwind • Open Street Maps •
-                        GIS • ARjs</p>
-                </div>
-                <div class="projectsright">
-                    <h1 class="project_info_h1">ARGOMsqrd</h1>
-                    <p class="project_info2"> ARGOMsqrd is a comprehensive GIS and AR-enabled Digital Mapping and
-                        Obituary Management System I led as the lead developer during my 4th-year capstone project. The
-                        system was designed to modernize operations at the Manolo Fortich Memorial Park, tackling
-                        inefficiency, congestion, and manual record-keeping prevalent in public cemeteries. <br><br>
-                        Developed using an Agile-Scrum framework, the web application features interactive grave mapping
-                        via OpenStreetMap, AR-guided navigation for visitors, a digital obituary platform, and genealogy
-                        visualization. Its successful evaluation—scoring an excellent 77.33 on the System Usability
-                        Scale (SUS) and high marks for user acceptance—demonstrates its effectiveness in improving
-                        operational efficiency and visitor experience, aligning with Sustainable Development Goals for
-                        smart community infrastructure. </p> <a href="#" onclick="openProject2Link()"
-                        class="project_GITbutton">GitHub Repository</a>
-                </div>
-            </div>
-
-            <!-- Project3 -->
-            <div class="project1">
-                <div class="projectsleft"> <img src="./imgs/projects3.png" alt="HRStreamline Dashboard Interface"
-                        class="project_project1_img">
-                    <p class="project_info">Laravel • MySQL • Blade • PHP • Tailwind CSS</p>
-                </div>
-                <div class="projectsright">
-                    <h1 class="project_info_h1">HRStreamline</h1>
-                    <p class="project_info2"> HRStreamline is a full-stack Human Resources Information System (HRIS)
-                        designed to centralize and automate core HR functions. It serves as a secure, unified repository
-                        for all employee data—from personal details and employment history to compensation, performance
-                        reviews, and benefits. <br><br> By automating routine administrative tasks, the system
-                        significantly reduces manual errors, increases operational efficiency, and enables data-driven
-                        decision-making. HRStreamline empowers organizations to align human capital management with
-                        strategic mission and vision, providing HR professionals with the tools to focus on development,
-                        engagement, and delivering a superior employee experience. </p> <a href="#"
-                        onclick="openProject3Link()" class="project_GITbutton">GitHub Repository</a>
-                </div>
-            </div>
-
-            <!-- Project4 -->
-            <div class="project2">
-                <div class="projectsleft"> <img src="./imgs/projects4.png" alt="Cropwise Farm Management Dashboard"
-                        class="project_project1_img">
-                    <p class="project_info">Laravel • MySQL • Blade • PHP • Tailwind CSS • OpenWeather API</p>
-                </div>
-                <div class="projectsright">
-                    <h1 class="project_info_h1">Cropwise</h1>
-                    <p class="project_info2"> Cropwise is a comprehensive web-based Farm Management and ERP system
-                        designed to modernize and streamline agricultural operations. It addresses key industry
-                        challenges such as fragmented record-keeping, inefficient resource use, and lack of real-time
-                        monitoring by integrating core functions—including crop planning, harvest tracking, inventory
-                        control, budgeting, employee management, payroll, and reporting—into a single unified platform.
-                        It was ceated in my Enterprise Application Development subject.
-
-                    </p> <a href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
-                </div>
-            </div>
-
-            <!-- Project5 -->
-            <div class="project1">
-                <div class="projectsleft"> <img src="./imgs/projects5.png" alt="Null Crime Reporting Platform Interface"
-                        class="project_project1_img">
-                    <p class="project_info">React • Ionic • PostgreSQL • Supabase • OpenStreetMap API</p>
-                </div>
-                <div class="projectsright">
-                    <h1 class="project_info_h1">Null Crime</h1>
-                    <p class="project_info2"> This project was created during the Emerging Technologies subject. Null
-                        Crime is a community-focused crime reporting and prevention platform
-                        developed to support SDG 16: Peace, Justice, and Strong Institutions. The system enables
-                        real-time crime reporting with photo/video uploads, interactive geographical crime mapping, and
-                        priority-based reporting features. It also provides public crime analytics and an educational
-                        safety module to raise awareness and promote prevention. <br><br> Designed to increase
-                        transparency and collaboration between citizens and law enforcement, the platform aims to create
-                        safer, more informed communities through accessible technology and data-driven insights. </p> <a
-                        href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
-                </div>
-            </div>
-
-
         </div>
-    </div>
+    </section>
 
     <!-- Contact Section -->
-    <footer id="contact" class="content-section">
-        <div class="contact">
-            <h1 class="contact_title">Contact Me</h1>
-            <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
-            <h3>Get in touch with me</h3>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <p class="contact_p">
-                        <i class="fas fa-envelope contact_icons"></i>
-                        irvenabarquez@gmail.com
-                    </p>
-                    <p class="contact_p">
-                        <i class="fas fa-phone contact_icons"></i>
-                        0920 426 8501
-                    </p>
+    <section>
+        <footer id="contact" class="content-section">
+            <div class="contact reveal">
+                <h1 class="contact_title">Contact Me</h1>
+                <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
+                <h3>Get in touch with me</h3>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <p class="contact_p">
+                            <i class="fas fa-envelope contact_icons"></i>
+                            irvenabarquez@gmail.com
+                        </p>
+                        <p class="contact_p">
+                            <i class="fas fa-phone contact_icons"></i>
+                            0920 426 8501
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact_p">
+                            <i class="fas fa-user contact_icons"></i>
+                            Irven Abarquez
+                        </p>
+                        <p class="contact_p">
+                            <i class="fas fa-map-marker-alt contact_icons"></i>
+                            Kihari, Tankulan, Manolo Fortich, Bukidnon
+                        </p>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <p class="contact_p">
-                        <i class="fas fa-user contact_icons"></i>
-                        Irven Abarquez
-                    </p>
-                    <p class="contact_p">
-                        <i class="fas fa-map-marker-alt contact_icons"></i>
-                        Kihari, Tankulan, Manolo Fortich, Bukidnon
-                    </p>
+
+                <div class="social-links mt-3 align-items-center">
+                    <a href="#" onclick="openfbLink()" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" onclick="openInstaLink()" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" onclick="openTwitterLink()" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="opengitLink()" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" onclick="openytLink()" class="social-icon">
+                        <i class="fab fa-telegram"></i>
+                    </a>
                 </div>
             </div>
-
-            <div class="social-links mt-3 align-items-center">
-                <a href="#" onclick="openfbLink()" class="social-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" onclick="openInstaLink()" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" onclick="openTwitterLink()" class="social-icon">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" onclick="opengitLink()" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" onclick="openytLink()" class="social-icon">
-                    <i class="fab fa-telegram"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
+        </footer>
+    </section>
     <script>
         // Responsive Menu Toggle
         function toggleMenu() {
@@ -525,6 +541,18 @@
             } else {
                 menuIcon.classList.remove('fa-times');
                 menuIcon.classList.add('fa-bars');
+            }
+        }
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+                // If on mobile (or if menu is open), close it after click
+                const navLinks = document.getElementById('navLinks');
+                if (navLinks && navLinks.classList.contains('active')) {
+                    toggleMenu();
+                }
             }
         }
 
@@ -655,6 +683,24 @@
         }
 
         document.getElementById("myAge").textContent = getAge("2004-06-18");
+
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        reveal();
     </script>
 </body>
 
