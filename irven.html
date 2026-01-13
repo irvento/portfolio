@@ -229,7 +229,7 @@
                                 <span class="level-dot active"></span>
                                 <span class="level-dot active"></span>
                                 <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
                                 <span class="level-dot"></span>
                             </span>
                         </div>
@@ -256,7 +256,7 @@
                                 <span class="level-dot active"></span>
                                 <span class="level-dot active"></span>
                                 <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
                                 <span class="level-dot"></span>
                             </span>
                         </div>
@@ -281,7 +281,7 @@
                                 <span class="level-dot active"></span>
                                 <span class="level-dot active"></span>
                                 <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>     
                                 <span class="level-dot"></span>
                             </span>
                         </div>
@@ -294,7 +294,7 @@
                                 <span class="level-dot active"></span>
                                 <span class="level-dot active"></span>
                                 <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
                                 <span class="level-dot"></span>
                             </span>
                         </div>
@@ -474,7 +474,6 @@ document.querySelectorAll('.navbutton').forEach(button => {
     });
 });
 
-// Handle window resize
 window.addEventListener('resize', () => {
     const navLinks = document.getElementById('navLinks');
     const menuIcon = document.querySelector('.menu-toggle i');
@@ -491,7 +490,6 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Close menu when clicking outside
 document.addEventListener('click', (e) => {
     const navLinks = document.getElementById('navLinks');
     const menuToggle = document.querySelector('.menu-toggle');
@@ -503,7 +501,6 @@ document.addEventListener('click', (e) => {
         toggleMenu();
     }
 });
-            // Link functions (placeholder)
             function openfbLink() { window.open('https://facebook.com', '_blank'); }
             function openInstaLink() { window.open('https://instagram.com', '_blank'); }
             function openTwitterLink() { window.open('https://twitter.com', '_blank'); }
