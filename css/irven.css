@@ -18,13 +18,15 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-corner {
     background-color: #000000;
 }
+
 /*scrollbar */
 
 /*cursor */
 body {
     margin: 0;
     overflow-x: hidden;
-    cursor: none !important; /* Force hide default cursor */
+    cursor: none !important;
+    /* Force hide default cursor */
 }
 
 .cursor-container {
@@ -43,11 +45,13 @@ body {
     height: 20px;
     background-color: gold;
     border-radius: 50%;
-    mix-blend-mode: difference; /* Better visibility on all backgrounds */
+    mix-blend-mode: difference;
+    /* Better visibility on all backgrounds */
     animation: pulse 1s infinite alternate;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    opacity: 0; /* Start hidden */
+    opacity: 0;
+    /* Start hidden */
     transition: opacity 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
@@ -71,10 +75,12 @@ body {
         opacity: 0.6;
         transform: translate(-50%, -50%) scale(1);
     }
+
     50% {
         opacity: 0.3;
         transform: translate(-50%, -50%) scale(1.2);
     }
+
     100% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(1);
@@ -85,6 +91,7 @@ body {
     0% {
         box-shadow: 0 0 5px gold, 0 0 10px gold;
     }
+
     100% {
         box-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.7);
     }
@@ -95,16 +102,18 @@ body {
     .cursor-container {
         display: none;
     }
+
     body {
         cursor: auto !important;
     }
 }
+
 /*cursor */
 /*navbar*/
 nav {
     background: rgba(0, 0, 0, 0.564);
     text-align: right;
-    padding: 20px; 
+    padding: 20px;
     margin: 0;
     height: 55px;
     position: fixed;
@@ -123,7 +132,7 @@ nav {
 }
 
 .navbutton {
-  
+
     font-family: Georgia, serif;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -196,7 +205,7 @@ nav {
         padding: 15px;
         height: 60px;
     }
-    
+
     .menu-toggle {
         display: block;
         position: relative;
@@ -204,7 +213,7 @@ nav {
         transform: none;
         right: 0;
     }
-    
+
     .nav-links {
         position: fixed;
         top: 60px;
@@ -222,16 +231,18 @@ nav {
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         overflow-y: auto;
         gap: 20px;
-        display: none; /* Start hidden */
+        display: none;
+        /* Start hidden */
     }
-    
+
     .nav-links.active {
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
-        display: flex; /* Show when active */
+        display: flex;
+        /* Show when active */
     }
-    
+
     .navbutton {
         margin: 0;
         width: 80%;
@@ -241,7 +252,7 @@ nav {
         font-size: 16px;
         margin-bottom: 10px;
     }
-    
+
     .navbar h3 {
         position: static;
         transform: none;
@@ -256,7 +267,7 @@ nav {
         font-size: 13px;
         margin: 0 3px;
     }
-    
+
     .navbar h3 {
         font-size: 22px;
     }
@@ -319,16 +330,17 @@ nav {
     .home_h1 {
         font-size: 50px;
     }
-    
+
     .home_h2 {
         font-size: 50px;
     }
-    
+
     .home_h3 {
         font-size: 70px;
         flex-direction: column;
     }
 }
+
 /* home */
 
 /*aboutme*/
@@ -369,7 +381,7 @@ nav {
     width: 100%;
     max-width: 400px;
     border-radius: 5%;
-    box-shadow: 10px 10px 39px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 39px 10px rgba(0, 0, 0, 0.75);
     display: block;
 }
 
@@ -377,7 +389,7 @@ nav {
     border: 2px solid gold;
     border-radius: 2%;
     background-image: linear-gradient(rgba(255, 255, 255, 0.823), rgba(255, 255, 255, 0.062));
-    box-shadow: 10px 10px 39px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 39px 10px rgba(0, 0, 0, 0.75);
     padding: 25px;
     font-family: "Lucida Console", Monaco, monospace;
     text-align: justify;
@@ -403,7 +415,7 @@ nav {
     padding: 12px 25px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 10px 10px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.75);
     transition: all 0.5s;
     margin-bottom: 20px;
 }
@@ -448,18 +460,19 @@ nav {
     .aboutme-content {
         flex-direction: column;
     }
-    
+
     .aboutme_picture {
         max-width: 300px;
         margin: 0 auto;
     }
-    
+
     .aboutme_info {
         font-size: 14px;
         letter-spacing: 1px;
         padding: 15px;
     }
 }
+
 /*aboutme*/
 
 /*cv - Fixed Tools Section*/
@@ -690,22 +703,23 @@ nav {
     .tools-categories-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .tools-legend {
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-    
+
     .tools-container {
         padding: 25px;
     }
 }
+
 /*cv*/
 
 /*projects*/
 #projects {
-    background-image: url(https://images4.alphacoders.com/132/1329894.png);
+    background-image: url(../imgs/projectsBG.jpg);
     background-size: cover;
     min-height: 100vh;
     padding: 80px 20px;
@@ -820,24 +834,26 @@ nav {
 }
 
 @media (max-width: 768px) {
+
     .project1,
     .project2,
     .project3 {
         flex-direction: column;
     }
-    
+
     .project2 .projectsright {
         order: 2;
     }
-    
+
     .project2 .projectsleft {
         order: 1;
     }
-    
+
     .project_gifs {
         width: 50px;
     }
 }
+
 /*projects*/
 
 /*contact*/
@@ -936,15 +952,16 @@ nav {
     .contact {
         padding: 20px;
     }
-    
+
     .contact-info {
         grid-template-columns: 1fr;
     }
-    
+
     .contact_p {
         font-size: 1rem;
     }
 }
+
 /*contact*/
 
 .content-section {

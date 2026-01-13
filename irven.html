@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Irven's Portfolio</title>
-    
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/irven.css">
@@ -14,26 +15,26 @@
 </head>
 
 <body>
-        <!-- Custom Cursor -->
+    <!-- Custom Cursor -->
     <div class="cursor-container">
         <div class="cursor"></div>
         <div class="trail"></div>
     </div>
 
- <!-- Navigation -->
-<nav class="navbar">    
-    <h3>-irven-</h3>
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
-    </button>
-    <div class="nav-links" id="navLinks">
-        <button onclick="scrollToSection('home')" class="navbutton">HOME</button>
-        <button onclick="scrollToSection('aboutme')" class="navbutton">ABOUT ME</button>
-        <button onclick="scrollToSection('cv')" class="navbutton">TOOLS</button>
-        <button onclick="scrollToSection('projects')" class="navbutton">PROJECTS</button>
-        <button onclick="scrollToSection('contact')" class="navbutton">CONTACT</button>
-    </div>
-</nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h3>-irven-</h3>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <button onclick="scrollToSection('home')" class="navbutton">HOME</button>
+            <button onclick="scrollToSection('aboutme')" class="navbutton">ABOUT ME</button>
+            <button onclick="scrollToSection('cv')" class="navbutton">TOOLS</button>
+            <button onclick="scrollToSection('projects')" class="navbutton">PROJECTS</button>
+            <button onclick="scrollToSection('contact')" class="navbutton">CONTACT</button>
+        </div>
+    </nav>
 
     <!-- Home Section -->
     <div id="home" class="content-section">
@@ -55,14 +56,15 @@
                 </div>
                 <div class="aboutmeright">
                     <p class="aboutme_info">
-    Hello there! I'm a <span id="myAge"></span>-year-old BSIT student hailing from Northern Bukidnon State College. 
-    My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan, 
-    Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find 
-    joy in the art of programming and web development, continuously honing my skills in these 
-    domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve 
-    into a proficient developer. My hobbies include venturing out into the beauty of nature and 
-    enjoying gaming in my free time.
-</p>
+                        Hello there! I'm a <span id="myAge"></span>-year-old BSIT student hailing from Northern Bukidnon
+                        State College.
+                        My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan,
+                        Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find
+                        joy in the art of programming and web development, continuously honing my skills in these
+                        domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve
+                        into a proficient developer. My hobbies include venturing out into the beauty of nature and
+                        enjoying gaming in my free time.
+                    </p>
 
                     <div class="hyperlinks">
                         <button onclick="scrollToSection('cv')" class="aboutme_button">View My Tools</button>
@@ -89,246 +91,246 @@
         </div>
     </div>
 
-<!-- TOOLS -->
-<div id="cv" class="content-section tools-section">
-    <div class="tools-wrapper">
-        <!-- Animated Background Shapes -->
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-        </div>
-        
-        <div class="tools-container">
-            <div class="tools-header">
-                <h1 class="tools-title">My Tech Toolkit</h1>
-                <p class="tools-subtitle">Technologies and tools I work with daily</p>
+    <!-- TOOLS -->
+    <div id="cv" class="content-section tools-section">
+        <div class="tools-wrapper">
+            <!-- Animated Background Shapes -->
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
             </div>
 
-            <div class="tools-categories-grid">
-
-                <!-- Frontend Development -->
-                <div class="category-card category-frontend">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Frontend Development</h3>
-                    </div>
-                    <div class="category-skills">
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-html5"></i></span>
-                                <span class="skill-name">HTML5</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
-                                <span class="skill-name">CSS3</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-js-square"></i></span>
-                                <span class="skill-name">JavaScript</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-react"></i></span>
-                                <span class="skill-name">React</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-css3"></i></span>
-                                <span class="skill-name">Tailwind CSS</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                    </div>
+            <div class="tools-container">
+                <div class="tools-header">
+                    <h1 class="tools-title">My Tech Toolkit</h1>
+                    <p class="tools-subtitle">Technologies and tools I work with daily</p>
                 </div>
 
-                <!-- Backend Development -->
-                <div class="category-card category-backend">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Backend & Database</h3>
-                    </div>
-                    <div class="category-skills">
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-node-js"></i></span>
-                                <span class="skill-name">Node.js</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                                <span class="level-dot"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-php"></i></span>
-                                <span class="skill-name">PHP</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-laravel"></i></span>
-                                <span class="skill-name">Laravel</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fas fa-database"></i></span>
-                                <span class="skill-name">MySQL</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
+                <div class="tools-categories-grid">
 
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fas fa-database"></i></span>
-                                <span class="skill-name">Supabase</span>
+                    <!-- Frontend Development -->
+                    <div class="category-card category-frontend">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
                             </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                                <span class="level-dot"></span>
-                            </span>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="category-skills">
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-html5"></i></span>
+                                    <span class="skill-name">HTML5</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
+                                    <span class="skill-name">CSS3</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-js-square"></i></span>
+                                    <span class="skill-name">JavaScript</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-react"></i></span>
+                                    <span class="skill-name">React</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-css3"></i></span>
+                                    <span class="skill-name">Tailwind CSS</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Backend Development -->
+                    <div class="category-card category-backend">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend & Database</h3>
+                        </div>
+                        <div class="category-skills">
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-node-js"></i></span>
+                                    <span class="skill-name">Node.js</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-php"></i></span>
+                                    <span class="skill-name">PHP</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-laravel"></i></span>
+                                    <span class="skill-name">Laravel</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fas fa-database"></i></span>
+                                    <span class="skill-name">MySQL</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fas fa-database"></i></span>
+                                    <span class="skill-name">Supabase</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile & Tools -->
+                    <div class="category-card category-mobile">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile & Tools</h3>
+                        </div>
+                        <div class="category-skills">
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-ionic"></i></span>
+                                    <span class="skill-name">Ionic</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-java"></i></span>
+                                    <span class="skill-name">Java</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                            <div class="skill-tag">
+                                <div class="skill-icon-name">
+                                    <span class="skill-icon"><i class="fab fa-git-alt"></i></span>
+                                    <span class="skill-name">Git</span>
+                                </div>
+                                <span class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
-                <!-- Mobile & Tools -->
-                <div class="category-card category-mobile">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Mobile & Tools</h3>
-                    </div>
-                    <div class="category-skills">
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-ionic"></i></span>
-                                <span class="skill-name">Ionic</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>     
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-java"></i></span>
-                                <span class="skill-name">Java</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                        <div class="skill-tag">
-                            <div class="skill-icon-name">
-                                <span class="skill-icon"><i class="fab fa-git-alt"></i></span>
-                                <span class="skill-name">Git</span>
-                            </div>
-                            <span class="skill-level">
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot active"></span>
-                                <span class="level-dot"></span>
-                            </span>
-                        </div>
-                    </div>
+
+
+                <!-- Footer Note -->
+                <div class="tools-footer">
+                    <p class="footer-note">
+                        <i class="fas fa-lightbulb"></i>
+                        Continuously learning and expanding my skill set. Open to exploring new technologies!
+                    </p>
                 </div>
-               
-                
-            </div>
-
-
-
-            <!-- Footer Note -->
-            <div class="tools-footer">
-                <p class="footer-note">
-                    <i class="fas fa-lightbulb"></i>
-                    Continuously learning and expanding my skill set. Open to exploring new technologies!
-                </p>
             </div>
         </div>
     </div>
-</div>
     <!-- Projects Section -->
     <div id="projects" class="content-section">
         <div class="projects">
@@ -346,47 +348,16 @@
                 <div class="projectsright">
                     <h1 class="project_info_h1">Underworld Legends</h1>
                     <p class="project_info2">
-                        Underworld Legends was created during my freshman year 2021-2022. 
-                        This project is inspired by Kaarin Gaming's Platformer Tutorial from YouTube. 
-                        I modified and enhanced Kaarin's single-player game into a Player vs. Player 
+                        Underworld Legends was created during my freshman year 2021-2022.
+                        This project is inspired by Kaarin Gaming's Platformer Tutorial from YouTube.
+                        I modified and enhanced Kaarin's single-player game into a Player vs. Player
                         experience, implementing fun and interactive gameplay mechanics.
                     </p>
                     <a href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
                 </div>
             </div>
 
-            <div class="project2">
-                <div class="projectsright">
-                    <h1 class="project_info_h1">SPA Portfolio</h1>
-                    <p class="project_info2">
-                        This portfolio was created in November 2023. It's implemented as a single-page 
-                        application portfolio using AJAX that manipulates webpage content by clicking 
-                        navigation buttons. This project was developed for my Major Subject, Event Driven Programming.
-                    </p>
-                    <a href="#" onclick="openProject2Link()" class="project_GITbutton">GitHub Repository</a>
-                </div>
-                <div class="projectsleft">
-                    <img src="./imgs/project2.png" alt="SPA Portfolio Project" class="project_project2_img">
-                    <p class="project_info">HTML • CSS • JavaScript</p>
-                </div>
-            </div>
 
-            <div class="project3">
-                <div class="projectsleft">
-                    <img src="./imgs/project3.png" alt="Java Calculator Project" class="project_project3_img">
-                    <p class="project_info">Java</p>
-                </div>
-                <div class="projectsright">
-                    <h1 class="project_info_h1">Java Simple Calculator</h1>
-                    <p class="project_info2">
-                        This program was created during my freshman years 2021-2022. 
-                        It was developed using simple arithmetic operations, logic structures, 
-                        conditions, and Java's Swing GUI framework. It functions as a standard 
-                        calculator with all basic operations.
-                    </p>
-                    <a href="#" onclick="openProject3Link()" class="project_GITbutton">GitHub Repository</a>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -396,34 +367,34 @@
             <h1 class="contact_title">Contact Me</h1>
             <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
             <h3 class="text-center">Get in touch with me</h3>
-            
+
             <div class="contact-info">
                 <div class="contact-item">
                     <p class="contact_p">
-                        <img src="https://us.123rf.com/450wm/sanek13744/sanek137441805/sanek13744180500500/101997013-mail-envelope-vector-icon-email-flat-vector-illustration-e-mail-business-concept-pictogram-with-long.jpg?ver=6" 
-                             alt="Email icon" class="contact_icons">
+                        <img src="https://us.123rf.com/450wm/sanek13744/sanek137441805/sanek13744180500500/101997013-mail-envelope-vector-icon-email-flat-vector-illustration-e-mail-business-concept-pictogram-with-long.jpg?ver=6"
+                            alt="Email icon" class="contact_icons">
                         irvenabarquez@gmail.com
                     </p>
                     <p class="contact_p">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7lYg6NYv7yapiQEM2XGVY2uZZFti0o2Dww&usqp=CAU" 
-                             alt="Phone icon" class="contact_icons">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7lYg6NYv7yapiQEM2XGVY2uZZFti0o2Dww&usqp=CAU"
+                            alt="Phone icon" class="contact_icons">
                         0920 426 8501
                     </p>
                 </div>
                 <div class="contact-item">
                     <p class="contact_p">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvwXGtZsa7pobqvLqcYztbXWxD4NEm5d6UQ&usqp=CAU" 
-                             alt="Messenger icon" class="contact_icons">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvwXGtZsa7pobqvLqcYztbXWxD4NEm5d6UQ&usqp=CAU"
+                            alt="Messenger icon" class="contact_icons">
                         Irven Abarquez
                     </p>
                     <p class="contact_p">
-                        <img src="data:image/jpeg;base64,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" 
-                             alt="Address icon" class="contact_icons">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Address icon" class="contact_icons">
                         Kihari, Tankulan, Manolo Fortich, Bukidnon
                     </p>
                 </div>
             </div>
-            
+
             <div class="social-links mt-3">
                 <a href="#" onclick="openfbLink()" class="social-icon">
                     <i class="fab fa-facebook-f"></i>
@@ -445,148 +416,149 @@
     </footer>
 
     <script>
-           // Responsive Menu Toggle
-function toggleMenu() {
-    const navLinks = document.getElementById('navLinks');
-    const menuIcon = document.querySelector('.menu-toggle i');
-    
-    navLinks.classList.toggle('active');
-    
-    // Change icon based on menu state
-    if (navLinks.classList.contains('active')) {
-        menuIcon.classList.remove('fa-bars');
-        menuIcon.classList.add('fa-times');
-    } else {
-        menuIcon.classList.remove('fa-times');
-        menuIcon.classList.add('fa-bars');
-    }
-}
+        // Responsive Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuIcon = document.querySelector('.menu-toggle i');
 
-// Close menu when clicking on a link (for mobile)
-document.querySelectorAll('.navbutton').forEach(button => {
-    button.addEventListener('click', (e) => {
-        // Only close menu if it's a section scroll button
-        if (button.getAttribute('onclick') && button.getAttribute('onclick').includes('scrollToSection')) {
-            if (window.innerWidth <= 768) {
-                toggleMenu();
+            navLinks.classList.toggle('active');
+
+            // Change icon based on menu state
+            if (navLinks.classList.contains('active')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
             }
         }
-    });
-});
 
-window.addEventListener('resize', () => {
-    const navLinks = document.getElementById('navLinks');
-    const menuIcon = document.querySelector('.menu-toggle i');
-    
-    if (window.innerWidth > 768) {
-        navLinks.classList.remove('active');
-        navLinks.style.display = 'flex';
-        menuIcon.classList.remove('fa-times');
-        menuIcon.classList.add('fa-bars');
-    } else {
-        if (!navLinks.classList.contains('active')) {
-            navLinks.style.display = 'none';
-        }
-    }
-});
+        // Close menu when clicking on a link (for mobile)
+        document.querySelectorAll('.navbutton').forEach(button => {
+            button.addEventListener('click', (e) => {
+                // Only close menu if it's a section scroll button
+                if (button.getAttribute('onclick') && button.getAttribute('onclick').includes('scrollToSection')) {
+                    if (window.innerWidth <= 768) {
+                        toggleMenu();
+                    }
+                }
+            });
+        });
 
-document.addEventListener('click', (e) => {
-    const navLinks = document.getElementById('navLinks');
-    const menuToggle = document.querySelector('.menu-toggle');
-    
-    if (window.innerWidth <= 768 && 
-        navLinks.classList.contains('active') &&
-        !navLinks.contains(e.target) && 
-        !menuToggle.contains(e.target)) {
-        toggleMenu();
-    }
-});
-            function openfbLink() { window.open('https://facebook.com', '_blank'); }
-            function openInstaLink() { window.open('https://instagram.com', '_blank'); }
-            function openTwitterLink() { window.open('https://twitter.com', '_blank'); }
-            function opengitLink() { window.open('https://github.com', '_blank'); }
-            function openytLink() { window.open('https://telegram.org', '_blank'); }
-            function openProject1Link() { window.open('#', '_blank'); }
-            function openProject2Link() { window.open('#', '_blank'); }
-            function openProject3Link() { window.open('#', '_blank'); }
+        window.addEventListener('resize', () => {
+            const navLinks = document.getElementById('navLinks');
+            const menuIcon = document.querySelector('.menu-toggle i');
 
-            // Custom cursor functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const cursor = document.querySelector('.cursor');
-        const trail = document.querySelector('.trail');
-        let mouseX = 0, mouseY = 0;
-        let trailX = 0, trailY = 0;
-        
-        // Update cursor position
-        function updateCursor(e) {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        }
-        
-        // Animate cursor with smooth trail
-        function animateCursor() {
-            // Main cursor (instant)
-            cursor.style.left = mouseX + 'px';
-            cursor.style.top = mouseY + 'px';
-            
-            // Trail (delayed for smooth effect)
-            trailX += (mouseX - trailX) * 0.1;
-            trailY += (mouseY - trailY) * 0.1;
-            trail.style.left = trailX + 'px';
-            trail.style.top = trailY + 'px';
-            
+            if (window.innerWidth > 768) {
+                navLinks.classList.remove('active');
+                navLinks.style.display = 'flex';
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                if (!navLinks.classList.contains('active')) {
+                    navLinks.style.display = 'none';
+                }
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            if (window.innerWidth <= 768 &&
+                navLinks.classList.contains('active') &&
+                !navLinks.contains(e.target) &&
+                !menuToggle.contains(e.target)) {
+                toggleMenu();
+            }
+        });
+        function openfbLink() { window.open('https://facebook.com', '_blank'); }
+        function openInstaLink() { window.open('https://instagram.com', '_blank'); }
+        function openTwitterLink() { window.open('https://twitter.com', '_blank'); }
+        function opengitLink() { window.open('https://github.com', '_blank'); }
+        function openytLink() { window.open('https://telegram.org', '_blank'); }
+        function openProject1Link() { window.open('#', '_blank'); }
+        function openProject2Link() { window.open('#', '_blank'); }
+        function openProject3Link() { window.open('#', '_blank'); }
+
+        // Custom cursor functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const cursor = document.querySelector('.cursor');
+            const trail = document.querySelector('.trail');
+            let mouseX = 0, mouseY = 0;
+            let trailX = 0, trailY = 0;
+
+            // Update cursor position
+            function updateCursor(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            }
+
+            // Animate cursor with smooth trail
+            function animateCursor() {
+                // Main cursor (instant)
+                cursor.style.left = mouseX + 'px';
+                cursor.style.top = mouseY + 'px';
+
+                // Trail (delayed for smooth effect)
+                trailX += (mouseX - trailX) * 0.1;
+                trailY += (mouseY - trailY) * 0.1;
+                trail.style.left = trailX + 'px';
+                trail.style.top = trailY + 'px';
+
+                requestAnimationFrame(animateCursor);
+            }
+
+            // Add click animation
+            document.addEventListener('click', function () {
+                cursor.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    cursor.style.transform = 'scale(1)';
+                }, 100);
+            });
+
+            // Change cursor on interactive elements
+            const interactiveElements = document.querySelectorAll('button, a, .navbutton, .project_GITbutton, .social-icon, .aboutme_button');
+
+            interactiveElements.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.style.transform = 'scale(1.5)';
+                    cursor.style.backgroundColor = '#00ffff';
+                });
+
+                el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'scale(1)';
+                    cursor.style.backgroundColor = 'gold';
+                });
+            });
+
+            // Initialize cursor
+            document.addEventListener('mousemove', updateCursor);
             requestAnimationFrame(animateCursor);
+        });
+
+        // Add cursor visibility on page load
+        window.onload = function () {
+            document.querySelector('.cursor').style.opacity = '1';
+            document.querySelector('.trail').style.opacity = '0.6';
+        };
+
+        function getAge(birthdate) {
+            const today = new Date();
+            const birth = new Date(birthdate);
+
+            let age = today.getFullYear() - birth.getFullYear();
+            const hasBirthday =
+                today.getMonth() > birth.getMonth() ||
+                (today.getMonth() === birth.getMonth() && today.getDate() >= birth.getDate());
+
+            if (!hasBirthday) age--;
+
+            return age;
         }
-        
-        // Add click animation
-        document.addEventListener('click', function() {
-            cursor.style.transform = 'scale(0.8)';
-            setTimeout(() => {
-                cursor.style.transform = 'scale(1)';
-            }, 100);
-        });
-        
-        // Change cursor on interactive elements
-        const interactiveElements = document.querySelectorAll('button, a, .navbutton, .project_GITbutton, .social-icon, .aboutme_button');
-        
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursor.style.transform = 'scale(1.5)';
-            cursor.style.backgroundColor = '#00ffff';
-        });
-        
-        el.addEventListener('mouseleave', () => {
-            cursor.style.transform = 'scale(1)';
-            cursor.style.backgroundColor = 'gold';
-        });
-    });
-    
-    // Initialize cursor
-    document.addEventListener('mousemove', updateCursor);
-    requestAnimationFrame(animateCursor);
-});
 
-// Add cursor visibility on page load
-window.onload = function() {
-    document.querySelector('.cursor').style.opacity = '1';
-    document.querySelector('.trail').style.opacity = '0.6';
-};
-
-function getAge(birthdate) {
-  const today = new Date();
-  const birth = new Date(birthdate);
-
-  let age = today.getFullYear() - birth.getFullYear();
-  const hasBirthday =
-    today.getMonth() > birth.getMonth() ||
-    (today.getMonth() === birth.getMonth() && today.getDate() >= birth.getDate());
-
-  if (!hasBirthday) age--;
-
-  return age;
-}
-
-document.getElementById("myAge").textContent = getAge("2004-06-18");
+        document.getElementById("myAge").textContent = getAge("2004-06-18");
     </script>
 </body>
+
 </html>
