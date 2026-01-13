@@ -321,8 +321,14 @@ nav {
     gap: 20px;
 }
 
+.namechange {
+    text-shadow: 4px 4px 5px rgba(184, 134, 11, 0.8);
+    transition: all 0.3s ease;
+}
+
 .namechange:hover {
     color: gold;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5);
     cursor: pointer;
 }
 
@@ -858,7 +864,7 @@ nav {
 
 /*contact*/
 #contact {
-    background-image: url(https://w.forfun.com/fetch/56/56ea42f8d77509eec7615fb8cc1b8c5b.jpeg);
+    background-image: url(../imgs/footerBG.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding: 80px 20px;
@@ -871,7 +877,7 @@ nav {
 .contact {
     max-width: 1200px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     background: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 20px;
@@ -930,10 +936,15 @@ nav {
 .contact_icons {
     width: 30px;
     height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    object-fit: cover;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: gold;
+    font-size: 16px;
 }
 
 .contact_p:hover .contact_icons {
