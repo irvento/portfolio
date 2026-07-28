@@ -521,46 +521,55 @@
     <section>
         <footer id="contact" class="content-section">
             <div class="contact reveal">
-                <h1 class="contact_title">Contact Me</h1>
-                <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
-                <h3>Get in touch with me</h3>
+                <div class="contact-header-block">
+                    <span class="contact-badge">Get In Touch</span>
+                    <h1 class="contact_title">Contact Me</h1>
+                    <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
+                    <p class="contact-desc">Feel free to reach out for collaborations, project inquiries, or just to say hello! I'm always open to discussing new opportunities.</p>
+                    
+                    <div class="contact-social-links">
+                        <a href="#" onclick="openfbLink()" class="contact-social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" onclick="openInstaLink()" class="contact-social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
 
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <p class="contact_p">
-                            <i class="fas fa-envelope contact_icons"></i>
-                            irvenabarquez@gmail.com
-                        </p>
-                        <p class="contact_p">
-                            <i class="fas fa-phone contact_icons"></i>
-                            0920 426 8501
-                        </p>
-                    </div>
-                    <div class="contact-item">
-                        <p class="contact_p">
-                            <i class="fas fa-user contact_icons"></i>
-                            Irven Abarquez
-                        </p>
-                        <p class="contact_p">
-                            <i class="fas fa-map-marker-alt contact_icons"></i>
-                            Kihari, Tankulan, Manolo Fortich, Bukidnon
-                        </p>
+                        <a href="#" onclick="opengitLink()" class="contact-social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="social-links mt-3 align-items-center">
-                    <a href="#" onclick="openfbLink()" class="social-icon">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" onclick="openInstaLink()" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" onclick="openTwitterLink()" class="social-icon">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="opengitLink()" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-card-icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">Email Address</span>
+                            <a href="mailto:irvenabarquez@gmail.com" class="contact-card-value">irvenabarquez@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon-wrapper">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">Phone Number</span>
+                            <a href="tel:09204268501" class="contact-card-value">0920 426 8501</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon-wrapper">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">Full Name</span>
+                            <span class="contact-card-value">Irven L. Abarquez</span>
+                        </div>
+                    </div>
+        
                 </div>
             </div>
         </footer>
