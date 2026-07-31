@@ -145,6 +145,303 @@ body {
     }
 }
 
+/* ============================================
+   FUN FACT SECTION
+   ============================================ */
+
+.funfact-wrapper {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+/* Parallax Background */
+.funfact-parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyd2JoNmE3MWxlNmwyOXU4eTJrdnkybjh6bjYxMHIzbGxsYnBuaDBhNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KWcGnX2iz0G1fMMHrO/giphy.gif') 
+                center center / cover no-repeat fixed;
+    z-index: 0;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.funfact-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.funfact-card {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 30px;
+    padding: 50px 45px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 
+                inset 0 1px 0 rgba(255, 215, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.funfact-card.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Header */
+.funfact-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.funfact-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+}
+
+.funfact-icon {
+    color: #ffd700;
+    font-size: 1.4rem;
+    animation: pulseStar 2s ease-in-out infinite;
+}
+
+@keyframes pulseStar {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.7; }
+}
+
+/* Content */
+.funfact-content {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.funfact-text {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.15rem;
+    letter-spacing: 0.3px;
+}
+
+.funfact-text .highlight {
+    color: #ffd700;
+    font-weight: 600;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Grid - Simplified */
+.funfact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin: 35px 0 30px 0;
+}
+
+.funfact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 22px 15px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 215, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: default;
+}
+
+.funfact-item:hover {
+    background: rgba(255, 215, 0, 0.08);
+    border-color: rgba(255, 215, 0, 0.3);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.1);
+}
+
+.funfact-item-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 215, 0, 0.12);
+    border-radius: 50%;
+    color: #ffd700;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.funfact-item:hover .funfact-item-icon {
+    background: rgba(255, 215, 0, 0.25);
+    transform: scale(1.1);
+}
+
+.funfact-label {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Closing */
+.funfact-closing {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 215, 0, 0.15);
+}
+
+.funfact-closing-text {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    font-style: italic;
+}
+
+.funfact-closing-text .highlight {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+.funfact-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0 15px 0;
+}
+
+.divider-line {
+    flex: 1;
+    max-width: 200px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ffd700, transparent);
+}
+
+.divider-dot {
+    color: #ffd700;
+    font-size: 1.2rem;
+    animation: spinDot 4s linear infinite;
+}
+
+@keyframes spinDot {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.funfact-signature {
+    font-size: 1rem;
+    color: #999;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .funfact-card {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .funfact-title {
+        font-size: 1.8rem;
+        gap: 12px;
+    }
+
+    .funfact-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+    .funfact-item {
+        padding: 16px 10px;
+    }
+
+    .funfact-item-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .funfact-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+
+    .funfact-text {
+        font-size: 1rem;
+    }
+
+    .funfact-closing-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .funfact-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .funfact-title {
+        font-size: 1.4rem;
+        flex-wrap: wrap;
+    }
+
+    .funfact-card {
+        padding: 25px 15px;
+    }
+
+    .funfact-item {
+        padding: 12px 8px;
+    }
+
+    .funfact-item-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .funfact-label {
+        font-size: 0.6rem;
+    }
+
+    .funfact-icon {
+        font-size: 1rem;
+    }
+}
+
+/* Scroll Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* Hide custom cursor on touch devices */
 @media (hover: none) and (pointer: coarse) {
     .cursor-container {
@@ -1066,10 +1363,11 @@ nav {
 
 /*contact*/
 #contact {
-    background-image: url(../imgs/footerBG.jpg);
+    background-image: linear-gradient(rgba(10, 10, 25, 0.85), rgba(10, 10, 25, 0.95)), url(../imgs/footerBG.jpg);
     background-attachment: fixed;
     background-size: cover;
-    padding: 80px 20px;
+    background-position: center;
+    padding: 100px 20px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1080,101 +1378,225 @@ nav {
     max-width: 1200px;
     width: 100%;
     text-align: left;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px;
-    border-radius: 20px;
-    border: 2px solid gold;
+    background: rgba(15, 12, 41, 0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 60px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact-header-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-badge {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffd700;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    padding: 6px 14px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 .contact_title {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: clamp(2rem, 5vw, 3rem);
-    color: gold;
-    text-shadow: 3px 3px 4px black;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    background: linear-gradient(135deg, #ffffff 30%, #ffd700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
+    letter-spacing: -1px;
 }
 
 .contact_subtitle {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 30px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
-.contact h3 {
-    color: white;
-    font-family: Georgia, serif;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+.contact-desc {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 35px;
 }
 
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    text-align: left;
-}
-
-.contact_p {
+.contact-social-links {
     display: flex;
-    align-items: center;
     gap: 15px;
-    color: #ffff69;
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    font-size: 1.1rem;
-    margin: 15px 0;
-    transition: all 0.3s ease;
 }
 
-.contact_p:hover {
-    color: white;
-    transform: translateX(5px);
-}
-
-.contact_icons {
-    width: 30px;
-    height: 30px;
+.contact-social-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.1);
-    color: gold;
-    font-size: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-decoration: none;
 }
 
-.contact_p:hover .contact_icons {
-    box-shadow: 0 0 15px gold;
-    transform: rotate(360deg);
+.contact-social-icon:hover {
+    background: #ffd700;
+    border-color: #ffd700;
+    color: #000000;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.25);
 }
 
-.social-links.mt-3 {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
+    width: 100%;
 }
 
-@media (max-width: 768px) {
+.contact-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 215, 0, 0.35);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.contact-card:hover::before {
+    opacity: 1;
+}
+
+.contact-card-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffd700;
+    font-size: 1.25rem;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.contact-card:hover .contact-card-icon-wrapper {
+    background: #ffd700;
+    color: #0a0a19;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.35);
+}
+
+.contact-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 1;
+    min-width: 0;
+}
+
+.contact-card-label {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-card-value {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    word-break: break-all;
+}
+
+a.contact-card-value:hover {
+    color: #ffd700;
+}
+
+@media (max-width: 992px) {
     .contact {
-        padding: 20px;
-    }
-
-    .contact-info {
         grid-template-columns: 1fr;
-    }
-
-    .contact_p {
-        font-size: 1rem;
+        gap: 40px;
+        padding: 40px 30px;
     }
 }
 
+@media (min-width: 600px) and (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    #contact {
+        padding: 60px 15px;
+    }
+    .contact {
+        padding: 30px 20px;
+    }
+    .contact-card {
+        padding: 15px;
+        gap: 15px;
+    }
+    .contact-card-icon-wrapper {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+}
 /*contact*/
 
 .content-section {

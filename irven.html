@@ -65,16 +65,20 @@
 
     <!-- About Me Section -->
     <div id="aboutme" class="content-section">
+        <!-- Floating Glass Ambient Orbs -->
+        <div class="glass-orb glass-orb-1"></div>
+        <div class="glass-orb glass-orb-2"></div>
+        <div class="glass-orb glass-orb-3"></div>
+
         <div class="aboutme-container">
             <div class="aboutme-content">
-
                 <div class="aboutme-card reveal">
+                    <div class="glass-badge">
+                        <i class="fas fa-user-astronaut"></i> GET TO KNOW ME
+                    </div>
                     <h2 class="aboutme-header">Who am I?</h2>
                     <p class="aboutme-text">
-                        Hello there! I'm a <span id="myAge"></span>-year-old BSIT student hailing from Northern
-                        Bukidnon
-                        State College.
-                        My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan,
+                        Hello there! I'm a <span id="myAge"></span>-year-old adventurer. My name is <span class="namechange">Irven L. Abarquez</span>, I currently live in Tankulan,
                         Manolo Fortich, Bukidnon, Philippines. Embracing a simple and minimalist lifestyle, I find
                         joy in the art of programming and web development, continuously honing my skills in these
                         domains. As I navigate the fascinating world of coding, I'm fueled by the passion to evolve
@@ -83,21 +87,27 @@
                     </p>
 
                     <div class="hyperlinks">
-                        <button onclick="scrollToSection('cv')" class="aboutme_button">View My Tools</button>
+                        <button onclick="scrollToSection('cv')" class="aboutme_button">
+                            <span>View My Tools</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                         <div class="social-links">
-                            <a href="#" onclick="openfbLink()" class="social-icon">
+                            <a href="#" onclick="openfbLink()" class="social-icon" aria-label="Facebook">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" onclick="openInstaLink()" class="social-icon">
+                            <a href="#" onclick="openInstaLink()" class="social-icon" aria-label="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" onclick="openTwitterLink()" class="social-icon">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" onclick="opengitLink()" class="social-icon">
+                            <a href="#" onclick="opengitLink()" class="social-icon" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" onclick="openTiktokLink()" class="social-icon">
+                            <a href="#" onclick="openDiscordLink()" class="social-icon" aria-label="Discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" onclick="openSpotifyLink()" class="social-icon" aria-label="Spotify">
+                                <i class="fab fa-spotify"></i>
+                            </a>
+                            <a href="#" onclick="openTiktokLink()" class="social-icon" aria-label="TikTok">
                                 <i class="fab fa-tiktok"></i>
                             </a>
                         </div>
@@ -107,6 +117,102 @@
         </div>
     </div>
 
+
+    <!-- Fun Fact About Me Section -->
+    <div id="funfact" class="content-section">
+        <div class="funfact-wrapper">
+            <!-- Parallax Background -->
+            <div class="funfact-parallax-bg"></div>
+            
+            <!-- Glass Floating Glowing Orbs -->
+            <div class="glass-orb funfact-orb-1"></div>
+            <div class="glass-orb funfact-orb-2"></div>
+            <div class="glass-orb funfact-orb-3"></div>
+
+            <div class="funfact-container">
+                <div class="funfact-card reveal">
+                    <div class="funfact-header">
+                        <div class="glass-badge">
+                            <i class="fas fa-sparkles"></i> MY PERSPECTIVE
+                        </div>
+                        <h2 class="funfact-title">
+                            <span class="funfact-icon"><i class="fas fa-star"></i></span>
+                            Fun Fact About Me
+                            <span class="funfact-icon"><i class="fas fa-star"></i></span>
+                        </h2>
+                    </div>
+                    
+                    <div class="funfact-content">
+                        <p class="funfact-text">
+                            I am a <span class="highlight">wannabe</span> — and proud of it.
+                        </p>
+                        <p class="funfact-text">
+                            I want to be the greatest version of myself, in every way imaginable. 
+                            My soul refuses to be boxed into one identity. Instead, I dance across 
+                            disciplines, collecting passions like scattered stars.
+                        </p>
+                        
+                        <div class="funfact-grid">
+                            <div class="funfact-item">
+                                <div class="funfact-item-icon"><i class="fas fa-guitar"></i></div>
+                                <span class="funfact-label">Music</span>
+                            </div>
+                            
+                            <div class="funfact-item">
+                                <div class="funfact-item-icon"><i class="fas fa-paint-brush"></i></div>
+                                <span class="funfact-label">Art</span>
+                            </div>
+                            
+                            <div class="funfact-item">
+                                <div class="funfact-item-icon"><i class="fas fa-dumbbell"></i></div>
+                                <span class="funfact-label">Fitness</span>
+                            </div>
+                            
+                            <div class="funfact-item">
+                                <div class="funfact-item-icon"><i class="fas fa-bicycle"></i></div>
+                                <span class="funfact-label">Adventure</span>
+                            </div>
+                            
+                            <div class="funfact-item">
+                                <div class="funfact-item-icon"><i class="fas fa-gamepad"></i></div>
+                                <span class="funfact-label">Gaming</span>
+                            </div>
+                            
+                            <div class="funfact-item">
+                                <div class="funfact-item-icon"><i class="fas fa-paw"></i></div>
+                                <span class="funfact-label">Nature</span>
+                            </div>
+                            
+                            <div class="funfact-item">
+                                <div class="funfact-item-icon"><i class="fas fa-utensils"></i></div>
+                                <span class="funfact-label">Culinary</span>
+                            </div>
+                            
+                            <div class="funfact-item">
+                                <div class="funfact-item-icon"><i class="fas fa-brain"></i></div>
+                                <span class="funfact-label">Mind</span>
+                            </div>
+                        </div>
+                        
+                        <div class="funfact-closing">
+                            <p class="funfact-closing-text">
+                                I might be a <span class="highlight">wannabe polymath</span> — 
+                                but isn't wanting to be everything, the first step to becoming anything?
+                            </p>
+                            <div class="funfact-divider">
+                                <span class="divider-dot">✦</span>
+                                <span class="divider-line"></span>
+                                <span class="divider-dot">✦</span>
+                            </div>
+                            <p class="funfact-signature">
+                                "Jack of all trades, master of none — but oftentimes better than master of one."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- TOOLS -->
     <div id="cv" class="content-section tools-section">
         <div class="tools-wrapper">
@@ -298,189 +404,47 @@
                     </div>
                 </div>
 
-                <!-- Project2 -->
-                <div class="project2">
-                    <div class="projectsleft"> <img src="./imgs/projects2.png"
-                            alt="ARGOMsqrd Cemetery Management System Interface" class="project_project1_img">
-                        <p class="project_info">TypeScript • React • Supabase • PostgreSQL• Tailwind • Open Street Maps
-                            •
-                            GIS • ARjs</p>
-                    </div>
-                    <div class="projectsright">
-                        <h1 class="project_info_h1">ARGOMsqrd</h1>
-                        <p class="project_info2"> ARGOMsqrd is a comprehensive GIS and AR-enabled Digital Mapping and
-                            Obituary Management System I led as the lead developer during my 4th-year capstone project.
-                            The
-                            system was designed to modernize operations at the Manolo Fortich Memorial Park, tackling
-                            inefficiency, congestion, and manual record-keeping prevalent in public cemeteries. <br><br>
-                            Developed using an Agile-Scrum framework, the web application features interactive grave
-                            mapping
-                            via OpenStreetMap, AR-guided navigation for visitors, a digital obituary platform, and
-                            genealogy
-                            visualization. </p> <a href="#" onclick="openProject2Link()"
-                            class="project_GITbutton">GitHub Repository</a>
-                    </div>
-                </div>
-
-                <!-- Project3 -->
-                <div class="project1">
-                    <div class="projectsleft"> <img src="./imgs/projects3.png" alt="HRStreamline Dashboard Interface"
-                            class="project_project1_img">
-                        <p class="project_info">Laravel • MySQL • Blade • PHP • Tailwind CSS</p>
-                    </div>
-                    <div class="projectsright">
-                        <h1 class="project_info_h1">HRStreamline</h1>
-                        <p class="project_info2"> HRStreamline is a full-stack Human Resources Information System (HRIS)
-                            designed to centralize and automate core HR functions. It serves as a secure, unified
-                            repository
-                            for all employee data—from personal details and employment history to compensation,
-                            performance
-                            reviews, and benefits.</p> <a href="#" onclick="openProject3Link()"
-                            class="project_GITbutton">GitHub Repository</a>
-                    </div>
-                </div>
-
-                <!-- Project4 -->
-                <div class="project2">
-                    <div class="projectsleft"> <img src="./imgs/projects4.png" alt="Cropwise Farm Management Dashboard"
-                            class="project_project1_img">
-                        <p class="project_info">Laravel • MySQL • Blade • PHP • Tailwind CSS • OpenWeather API</p>
-                    </div>
-                    <div class="projectsright">
-                        <h1 class="project_info_h1">Cropwise</h1>
-                        <p class="project_info2"> Cropwise is a comprehensive web-based Farm Management and ERP system
-                            designed to modernize and streamline agricultural operations. It addresses key industry
-                            challenges such as fragmented record-keeping, inefficient resource use, and lack of
-                            real-time
-                            monitoring by integrating core functions—including crop planning, harvest tracking,
-                            inventory
-                            control, budgeting, employee management, payroll, and reporting—into a single unified
-                            platform.
-                            It was ceated in my Enterprise Application Development subject.
-
-                        </p> <a href="#" onclick="openProject4Link()" class="project_GITbutton">GitHub Repository</a>
-                    </div>
-                </div>
-
-                <!-- Project5 -->
-                <div class="project1">
-                    <div class="projectsleft"> <img src="./imgs/projects5.png"
-                            alt="Null Crime Reporting Platform Interface" class="project_project1_img">
-                        <p class="project_info">React • Ionic • PostgreSQL • Supabase • OpenStreetMap API</p>
-                    </div>
-                    <div class="projectsright">
-                        <h1 class="project_info_h1">Null Crime</h1>
-                        <p class="project_info2"> This project was created during the Emerging Technologies subject.
-                            Null
-                            Crime is a community-focused crime reporting and prevention platform
-                            developed to support SDG 16: Peace, Justice, and Strong Institutions. The system enables
-                            real-time crime reporting with photo/video uploads, interactive geographical crime mapping,
-                            and
-                            priority-based reporting features. It also provides public crime analytics and an
-                            educational
-                            safety module to raise awareness and promote prevention.
-                        </p> <a href="#" onclick="openProject5Link()" class="project_GITbutton">GitHub Repository</a>
-                    </div>
-                </div>
+               
 
 
             </div>
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="content-section">
-        <div class="certificates-container reveal">
-            <h1 class="project_h1">CERTIFICATES</h1>
-            <div class="carousel-container">
-                <button class="carousel-btn prev-btn" aria-label="Previous slide"><i
-                        class="fas fa-chevron-left"></i></button>
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-slide"><img
-                                src="./imgs/Certificates/25-08-002_IRVEN_ABARQUEZ_akuni_projects.jpg"
-                                alt="Certificate 1"></li>
-                        <li class="carousel-slide"><img
-                                src="./imgs/Certificates/570c3905-b190-4ec4-b4c3-284c937555ac.jpg" alt="Certificate 2">
-                        </li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/Screenshot 2026-01-14 140755.png"
-                                alt="Certificate 3"></li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/Screenshot 2026-01-14 140834.png"
-                                alt="Certificate 4"></li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/Screenshot 2026-01-14 140851.png"
-                                alt="Certificate 5"></li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/Screenshot 2026-01-14 140905.png"
-                                alt="Certificate 6"></li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/Screenshot 2026-01-14 140918.png"
-                                alt="Certificate 7"></li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/Screenshot 2026-01-14 140932.png"
-                                alt="Certificate 8"></li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/Screenshot 2026-01-14 140951.png"
-                                alt="Certificate 9"></li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/Screenshot 2026-01-14 141008.png"
-                                alt="Certificate 10"></li>
-                        <li class="carousel-slide"><img
-                                src="./imgs/Certificates/_basicsofaudioandvideoprocessing25-09-002_Irven_Abarquez_AKUNI.jpg"
-                                alt="Certificate 11"></li>
-                        <li class="carousel-slide"><img src="./imgs/Certificates/hour_of_code.png" alt="Certificate 12">
-                        </li>
-                    </ul>
-                </div>
-                <button class="carousel-btn next-btn" aria-label="Next slide"><i
-                        class="fas fa-chevron-right"></i></button>
-            </div>
-            <div class="carousel-pagination"></div>
-        </div>
-    </section>
+   
 
     <!-- Contact Section -->
 
     <section>
         <footer id="contact" class="content-section">
             <div class="contact reveal">
-                <h1 class="contact_title">Contact Me</h1>
-                <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
-                <h3>Get in touch with me</h3>
+                <div class="contact-header-block">
+                    <span class="contact-badge">Get In Touch</span>
+                    <h1 class="contact_title">Contact Me</h1>
+                    <h2 class="contact_subtitle">IRVEN L. ABARQUEZ</h2>
+                    <p class="contact-desc">Feel free to reach out for collaborations, project inquiries, or just to say hello! I'm always open to discussing new opportunities.</p>
+                    
+                    <div class="contact-social-links">
+                        <a href="#" onclick="openfbLink()" class="contact-social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" onclick="openInstaLink()" class="contact-social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
 
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <p class="contact_p">
-                            <i class="fas fa-envelope contact_icons"></i>
-                            irvenabarquez@gmail.com
-                        </p>
-                        <p class="contact_p">
-                            <i class="fas fa-phone contact_icons"></i>
-                            0920 426 8501
-                        </p>
+                        <a href="#" onclick="opengitLink()" class="contact-social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" onclick="openDiscordLink()" class="contact-social-icon" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" onclick="openSpotifyLink()" class="contact-social-icon" aria-label="Spotify">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                        <a href="#" onclick="openTiktokLink()" class="contact-social-icon" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
                     </div>
-                    <div class="contact-item">
-                        <p class="contact_p">
-                            <i class="fas fa-user contact_icons"></i>
-                            Irven Abarquez
-                        </p>
-                        <p class="contact_p">
-                            <i class="fas fa-map-marker-alt contact_icons"></i>
-                            Kihari, Tankulan, Manolo Fortich, Bukidnon
-                        </p>
-                    </div>
-                </div>
-
-                <div class="social-links mt-3 align-items-center">
-                    <a href="#" onclick="openfbLink()" class="social-icon">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" onclick="openInstaLink()" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" onclick="openTwitterLink()" class="social-icon">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="opengitLink()" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" onclick="openTiktokLink()" class="social-icon">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
                 </div>
             </div>
         </footer>
@@ -555,9 +519,10 @@
             }
         });
         function openfbLink() { window.open('https://www.facebook.com/nevr1.abarquez/', '_blank'); }
-        function openInstaLink() { window.open('https://www.instagram.com/_nevr1_/', '_blank'); }
-        function openTwitterLink() { window.open('https://x.com/Codin_cat', '_blank'); }
+        function openInstaLink() { window.open('https://www.instagram.com/_nevrl/', '_blank'); }
         function opengitLink() { window.open('https://github.com/irvento', '_blank'); }
+        function openDiscordLink() { window.open('https://discord.com/users/748513071214887022', '_blank'); }
+        function openSpotifyLink() { window.open('https://open.spotify.com/user/9jpplna0e4bs72rf3ikgxxbg3', '_blank'); }
         function openTiktokLink() { window.open('https://www.tiktok.com/@v1nnttt', '_blank'); }
         function openProject1Link() { window.open('https://github.com/irvento/MIDGAME', '_blank'); }
         function openProject2Link() { window.open('https://github.com/SendHelp001/argomsqrd', '_blank'); }
