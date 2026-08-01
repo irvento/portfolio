@@ -129,7 +129,7 @@
             </div>
             <div class="spotify-embed-card">
                 <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=9jpplna0e4bs72rf3ikgxxbg3&redirect=true" target="_blank" rel="noopener noreferrer">
-                    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=9jpplna0e4bs72rf3ikgxxbg3&cover_image=true&theme=spotify-embed&show_offline=true&background_color=ff7b00&interchange=true&profanity=false&hide_remaster=false&bar_color=53b14f&bar_color_cover=true&mode=dark" alt="Spotify Profile Status" class="spotify-profile-img" />
+                    <img id="spotifyImg" src="https://spotify-github-profile.kittinanx.com/api/view?uid=9jpplna0e4bs72rf3ikgxxbg3&cover_image=true&theme=spotify-embed&show_offline=true&background_color=ff7b00&interchange=true&profanity=false&hide_remaster=false&bar_color=53b14f&bar_color_cover=true&mode=dark" alt="Spotify Profile Status" class="spotify-profile-img" />
                 </a>
             </div>
             <div class="spotify-gif-side">
@@ -663,6 +663,22 @@
         window.addEventListener("scroll", reveal);
         // Trigger once on load
         reveal();
+
+        // Live Spotify Status Polling (updates widget seamless every 2s without page flashing)
+        (function pollSpotifyStatus() {
+            const spotifyImg = document.getElementById('spotifyImg');
+            if (!spotifyImg) return;
+            const baseSrc = "https://spotify-github-profile.kittinanx.com/api/view?uid=9jpplna0e4bs72rf3ikgxxbg3&cover_image=true&theme=spotify-embed&show_offline=true&background_color=ff7b00&interchange=true&profanity=false&hide_remaster=false&bar_color=53b14f&bar_color_cover=true&mode=dark";
+
+            setInterval(() => {
+                const timestampUrl = baseSrc + "&t=" + Date.now();
+                const tempImg = new Image();
+                tempImg.onload = () => {
+                    spotifyImg.src = timestampUrl;
+                };
+                tempImg.src = timestampUrl;
+            }, 2000);
+        })();
     </script>
     <script src="./js/certificates.js"></script>
 </body>
