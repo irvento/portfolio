@@ -1,118 +1,143 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-image: url(https://getwallpapers.com/wallpaper/full/0/3/1/90073.jpg);
-    background-size: cover;
-    background-color: #f0f0f0;
+html, body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    transition: all 0.5s ease-in-out;
+    overflow-x: hidden;
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-image: url(https://getwallpapers.com/wallpaper/full/0/3/1/90073.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0f0c29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
 
 .index {
     text-align: center;
-    padding: 50px;
+    padding: 2.5rem 1.5rem;
+    max-width: 500px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    margin: auto;
 }
 
 h1 {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    font-weight: 400;
-    text-decoration: none;
-    font-style: italic;
-    font-variant: normal;
-    text-transform: capitalize;
-    font-size: 40px;
-    color: black;
-    margin-bottom: 10px;
-    transition: all 0.5s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    transition: color 0.5s ease-in-out;
 }
 
 h2 {
-    color: #555;
-    margin-bottom: 30px;
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 25px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: black;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-    transition: all 0.5s ease-in-out;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    line-height: 1.4;
+    transition: color 0.5s ease-in-out;
 }
-
 
 .index-pictures {
     display: flex;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
 .picture-margins {
-    margin: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
     transition: transform 0.3s ease-in-out;
 }
+
 .picture-margins:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .picture {
-    width: 150px;
-    height: 150px;
+    width: clamp(120px, 30vw, 160px);
+    height: clamp(120px, 30vw, 160px);
     border-radius: 50%;
-    border: 2px solid #000000;
+    border: 3px solid #ffd700;
     object-fit: cover;
-    box-shadow: 0 0 10px 10px rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    transition: all 0.5s ease-in-out;
 }
 
 .picture:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px 20px rgba(137, 137, 137, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
 }
 
-
-
-.index-name{
-    font-family: Georgia, serif;
-
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #f8f8f8;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: italic;
-    font-variant: small-caps;
-    text-transform: lowercase;
-    text-shadow: 2px 2px 10px rgb(255, 255, 255);
-
+.index-name {
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+    font-weight: 600;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    transition: color 0.3s ease;
 }
-.index-name:hover{
-    color: gold;
-    text-shadow: 0px 0px 15px rgb(255, 232, 104);
+
+.picture-margins:hover .index-name {
+    color: #ffd700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }
+
 .index button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: 2px solid #000000;
-  color: #000000;
-  background-color: white;
-  border-radius: 50px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.8rem;
+    min-height: 44px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #ffd700;
+    color: #000000;
+    background-color: #ffd700;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+    touch-action: manipulation;
 }
-
 
 .index button:hover {
-  background-color: #000000;
-  color: white;
-  border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
 }
+
+.index button:active {
+    transform: scale(0.96);
+}
+
+@media (max-width: 480px) {
+    .index {
+        padding: 2rem 1.2rem;
+    }
+}
+

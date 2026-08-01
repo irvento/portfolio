@@ -19,6 +19,11 @@ function openfbLink() {
     window.location.href = url;
   }
 
+  function openRobloxLink() {
+    var url = "https://www.roblox.com/share?code=d317b768c7c0ad41abba3974da2f9371&type=Profile&source=ProfileShare&stamp=1785593393083";
+    window.location.href = url;
+  }
+
   function openProject1Link() {
     var url = "https://github.com/irvento/MIDGAME";
     window.location.href = url;
