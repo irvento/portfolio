@@ -1,12 +1,12 @@
 // carousel.js – Lightweight carousel logic
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
     const nextButton = document.querySelector('.next-btn');
     const prevButton = document.querySelector('.prev-btn');
     const pagination = document.querySelector('.carousel-pagination');
 
     if (!track || !nextButton || !prevButton || !pagination) return;
+    const slides = Array.from(track.children);
 
     let currentIndex = 0;
 
