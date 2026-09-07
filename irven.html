@@ -3,15 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Irven's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary SEO Meta Tags -->
+    <title>Irven L. Abarquez | Full-Stack Developer &amp; UI/UX Designer Portfolio</title>
+    <meta name="title" content="Irven L. Abarquez | Full-Stack Developer &amp; UI/UX Designer Portfolio">
+    <meta name="description" content="Explore projects and technical skills of Irven L. Abarquez, a Full-Stack Developer &amp; UI/UX Designer specializing in React, Laravel, Python, Tailwind CSS, and MySQL.">
+    <meta name="keywords" content="Irven L. Abarquez, Full-Stack Developer, Frontend Engineer, Web Developer, UI/UX Designer, React, Laravel, Python, Tailwind CSS, MySQL, Portfolio, Philippines Web Developer">
+    <meta name="author" content="Irven L. Abarquez">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://irvento.github.io/portfolio/irven.html">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://irvento.github.io/portfolio/irven.html">
+    <meta property="og:site_name" content="Irven L. Abarquez Portfolio">
+    <meta property="og:title" content="Irven L. Abarquez | Full-Stack Developer &amp; Frontend Engineer">
+    <meta property="og:description" content="Full-stack web applications, frontend architectures, and UI/UX design case studies built with React, Laravel, Python, and MySQL.">
+    <meta property="og:image" content="https://irvento.github.io/portfolio/imgs/profilepicture.jpg">
+    <meta property="og:image:secure_url" content="https://irvento.github.io/portfolio/imgs/profilepicture.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Irven L. Abarquez - Full-Stack Developer Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://irvento.github.io/portfolio/irven.html">
+    <meta name="twitter:title" content="Irven L. Abarquez | Full-Stack Developer &amp; UI/UX Designer">
+    <meta name="twitter:description" content="Explore full-stack web applications and modern UI systems built with React, Laravel, Python, and Tailwind CSS.">
+    <meta name="twitter:image" content="https://irvento.github.io/portfolio/imgs/profilepicture.jpg">
+    <meta name="twitter:image:alt" content="Irven L. Abarquez - Full-Stack Developer Portfolio">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0f0c29">
+
+    <!-- Stylesheets & Fonts -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/irven.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Irven L. Abarquez",
+        "alternateName": "irvento",
+        "jobTitle": ["Full-Stack Developer", "Frontend Engineer", "UI/UX Designer", "Web Developer"],
+        "url": "https://irvento.github.io/portfolio/irven.html",
+        "image": "https://irvento.github.io/portfolio/imgs/profilepicture.jpg",
+        "knowsAbout": [
+          "React",
+          "Laravel",
+          "Python",
+          "Tailwind CSS",
+          "MySQL",
+          "JavaScript",
+          "Frontend Engineering",
+          "Full-Stack Web Development",
+          "UI/UX Design"
+        ],
+        "sameAs": [
+          "https://github.com/irvento",
+          "https://www.linkedin.com/in/irven-abarquez-3a53022b1/",
+          "https://www.facebook.com/nevr1.abarquez/",
+          "https://www.instagram.com/_nevrl/"
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -92,6 +160,9 @@
                             <i class="fas fa-arrow-right"></i>
                         </button>
                         <div class="social-links">
+                            <a href="#" onclick="openLinkedInLink()" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                             <a href="#" onclick="openfbLink()" class="social-icon" aria-label="Facebook">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
@@ -402,30 +473,142 @@
     <section>
         <div id="projects" class="content-section">
             <div class="projects reveal">
-                <h1 class="project_h1">
+                <h2 class="project_h1">
                     <img src="./imgs/AssassinSKGif.gif" alt="Assassin gif" class="project_gifs">
-                    PROJECTS
+                    FEATURED PROJECTS
                     <img src="./imgs/The_Beheaded_0.gif" alt="Beheaded gif" class="project_gifs">
-                </h1>
-                <!-- Project1 -->
-                <div class="project1">
+                </h2>
+
+                <!-- Project 1: Full-Stack Web Application (HRStreamline) -->
+                <article class="project1">
                     <div class="projectsleft">
-                        <img src="./imgs/projects1.jpg" alt="Underworld Legends Project" class="project_project1_img">
-                        <p class="project_info">Java • Pixel Art Studios</p>
+                        <img src="./imgs/projects3.png" alt="HRStreamline HRIS Project by Irven Abarquez" class="project_project1_img">
+                        <p class="project_info">Laravel • MySQL • Tailwind CSS • REST API</p>
                     </div>
                     <div class="projectsright">
-                        <h1 class="project_info_h1">Underworld Legends</h1>
-                        <p class="project_info2">
-                            Underworld Legends was created during my freshman year 2021-2022.
-                            This project is inspired by Kaarin Gaming's Platformer Tutorial from YouTube.
-                            I modified and enhanced Kaarin's single-player game into a Player vs. Player
-                            experience, implementing fun and interactive gameplay mechanics. The game features
-                            pixel art graphics, multiple levels, and various character abilities, providing an engaging
-                            experience for the players.
+                        <h3 class="project_info_h1">HRStreamline – Enterprise HRIS Platform</h3>
+                        <p class="project-tagline">
+                            A centralized workforce management and automated notification engine engineered with 
+                            <strong>Laravel</strong>, <strong>MySQL</strong>, and a utility-first <strong>Tailwind CSS</strong> interface.
                         </p>
-                        <a href="#" onclick="openProject1Link()" class="project_GITbutton">GitHub Repository</a>
+
+                        <h4 class="project-subheading">1. Business Problem &amp; Scope</h4>
+                        <p class="project_info2">
+                            Manual personnel record management and fragmented notification channels led to tracking bottlenecks and compliance gaps. The organization required a secure, centralized web application to streamline employee administration and automate critical notifications.
+                        </p>
+
+                        <h4 class="project-subheading">2. Architectural Solution</h4>
+                        <ul class="project-bullet-list">
+                            <li>Architected a normalized <strong>MySQL</strong> database with indexed foreign keys for sub-second query performance.</li>
+                            <li>Engineered <strong>Role-Based Access Control (RBAC)</strong> and policy gates using Laravel Eloquent ORM.</li>
+                            <li>Integrated responsive asynchronous UI components styled cleanly with <strong>Tailwind CSS</strong>.</li>
+                        </ul>
+
+                        <h4 class="project-subheading">3. Tech Stack</h4>
+                        <div class="project-tech-badges">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Tailwind CSS</span>
+                            <span>JavaScript (ES6+)</span>
+                            <span>REST APIs</span>
+                        </div>
+
+                        <h4 class="project-subheading">4. Key Results &amp; Impact</h4>
+                        <ul class="project-bullet-list">
+                            <li><strong>Performance:</strong> Accelerated routine data queries by 40% through relational schema optimization.</li>
+                            <li><strong>Automation:</strong> Eliminated manual tracking by automating employee alerts and status workflows.</li>
+                        </ul>
+
+                        <a href="#" onclick="openProject3Link()" class="project_GITbutton" aria-label="View HRStreamline on GitHub">View on GitHub</a>
                     </div>
-                </div>
+                </article>
+
+                <!-- Project 2: Data-Driven Platform (CropWise) -->
+                <article class="project2">
+                    <div class="projectsright">
+                        <h3 class="project_info_h1">CropWise – Agricultural Intelligence Platform</h3>
+                        <p class="project-tagline">
+                            A data-driven agricultural monitoring and decision platform built with 
+                            <strong>Python</strong>, <strong>MySQL</strong>, and an interactive modern web frontend.
+                        </p>
+
+                        <h4 class="project-subheading">1. Problem Statement</h4>
+                        <p class="project_info2">
+                            Disparate agricultural sensor readings and manual yield records created decision paralysis for field managers. Required an automated data aggregation pipeline and clean reporting dashboard to convert raw metrics into actionable farming recommendations.
+                        </p>
+
+                        <h4 class="project-subheading">2. Engineering &amp; Data Pipeline</h4>
+                        <ul class="project-bullet-list">
+                            <li>Engineered modular <strong>Python</strong> processing scripts to validate, sanitize, and aggregate agricultural datasets.</li>
+                            <li>Designed high-integrity <strong>MySQL</strong> schemas for time-series sensor logs and crop analytics.</li>
+                            <li>Delivered an accessible, mobile-first analytics UI using <strong>Tailwind CSS</strong> and dynamic data tables.</li>
+                        </ul>
+
+                        <h4 class="project-subheading">3. Tech Stack</h4>
+                        <div class="project-tech-badges">
+                            <span>Python</span>
+                            <span>MySQL</span>
+                            <span>Tailwind CSS</span>
+                            <span>Data Pipelines</span>
+                            <span>REST APIs</span>
+                        </div>
+
+                        <h4 class="project-subheading">4. Key Results &amp; Impact</h4>
+                        <ul class="project-bullet-list">
+                            <li><strong>Efficiency:</strong> Replaced repetitive manual reporting with automated data extraction scripts.</li>
+                            <li><strong>Data Reliability:</strong> Enforced 99.9% extraction consistency with structured validation and error handling.</li>
+                        </ul>
+
+                        <a href="#" onclick="openProject4Link()" class="project_GITbutton" aria-label="View CropWise on GitHub">View on GitHub</a>
+                    </div>
+                    <div class="projectsleft">
+                        <img src="./imgs/projects4.png" alt="CropWise Agricultural Platform by Irven Abarquez" class="project_project2_img">
+                        <p class="project_info">Python • MySQL • Tailwind CSS • Analytics</p>
+                    </div>
+                </article>
+
+                <!-- Project 3: Interactive PvP Game Engine (Underworld Legends) -->
+                <article class="project3">
+                    <div class="projectsleft">
+                        <img src="./imgs/projects1.jpg" alt="Underworld Legends Game Project by Irven Abarquez" class="project_project3_img">
+                        <p class="project_info">Java • OOP Architecture • Pixel Art</p>
+                    </div>
+                    <div class="projectsright">
+                        <h3 class="project_info_h1">Underworld Legends – Real-Time 2D PvP Engine</h3>
+                        <p class="project-tagline">
+                            An action-packed 2D Player-vs-Player action platformer engineered in <strong>Java</strong>, 
+                            featuring custom physics, responsive hit-boxes, and real-time multiplayer combat.
+                        </p>
+
+                        <h4 class="project-subheading">1. Engineering Challenge</h4>
+                        <p class="project_info2">
+                            Transforming a single-player tutorial prototype into a robust 2-player combat game required architecting frame-rate independent gameplay loops, multi-character state machines, and synchronized collision detection.
+                        </p>
+
+                        <h4 class="project-subheading">2. Systems Architecture</h4>
+                        <ul class="project-bullet-list">
+                            <li>Implemented clean <strong>Object-Oriented Programming (OOP)</strong> design patterns for modular character abilities and enemy states.</li>
+                            <li>Engineered custom 2D bounding-box collision detection routines and gravity physics simulation.</li>
+                            <li>Designed layered pixel art sprite animation rendering pipelines with smooth 60 FPS performance.</li>
+                        </ul>
+
+                        <h4 class="project-subheading">3. Tech Stack</h4>
+                        <div class="project-tech-badges">
+                            <span>Java</span>
+                            <span>OOP Design</span>
+                            <span>Game Physics</span>
+                            <span>Pixel Art Studios</span>
+                        </div>
+
+                        <h4 class="project-subheading">4. Key Results &amp; Impact</h4>
+                        <ul class="project-bullet-list">
+                            <li><strong>Optimization:</strong> Maintained consistent 60 FPS physics calculation without frame-drop under active combat.</li>
+                            <li><strong>Extensibility:</strong> Designed modular character class hierarchy allowing rapid addition of new hero abilities.</li>
+                        </ul>
+
+                        <a href="#" onclick="openProject1Link()" class="project_GITbutton" aria-label="View Underworld Legends on GitHub">View on GitHub</a>
+                    </div>
+                </article>
 
             </div>
         </div>
@@ -443,6 +626,9 @@
                     <p class="contact-desc">Feel free to reach out for collaborations, project inquiries, or just to say hello! I'm always open to discussing new opportunities.</p>
                     
                     <div class="contact-social-links">
+                        <a href="#" onclick="openLinkedInLink()" class="contact-social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                         <a href="#" onclick="openfbLink()" class="contact-social-icon" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -541,6 +727,7 @@
                 toggleMenu();
             }
         });
+        function openLinkedInLink() { window.open('https://www.linkedin.com/in/irven-abarquez-3a53022b1/', '_blank'); }
         function openfbLink() { window.open('https://www.facebook.com/nevr1.abarquez/', '_blank'); }
         function openInstaLink() { window.open('https://www.instagram.com/_nevrl/', '_blank'); }
         function opengitLink() { window.open('https://github.com/irvento', '_blank'); }

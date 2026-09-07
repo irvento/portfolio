@@ -1338,6 +1338,76 @@ nav {
     border-color: gold;
 }
 
+/* SEO Project Case Study Styles */
+.project-tagline {
+    font-family: 'Segoe UI', sans-serif;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.project-tagline strong {
+    color: #ffd700;
+}
+
+.project-subheading {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffd700;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.project-bullet-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 14px;
+}
+
+.project-bullet-list li {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.project-bullet-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+}
+
+.project-bullet-list li strong {
+    color: #ffffff;
+}
+
+.project-tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 16px 0;
+}
+
+.project-tech-badges span {
+    background: rgba(255, 215, 0, 0.12);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    color: #ffd700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 0.5px;
+}
+
 @media (max-width: 768px) {
 
     .project1,

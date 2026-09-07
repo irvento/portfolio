@@ -1,0 +1,12 @@
+# robots.txt for Irven L. Abarquez Portfolio
+# GitHub Pages: https://irvento.github.io/portfolio/
+
+User-agent: *
+Allow: /
+
+# Prevent search engine crawlers from indexing raw configuration or dependency directories
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Absolute XML Sitemap Location
+Sitemap: https://irvento.github.io/portfolio/sitemap.xml
